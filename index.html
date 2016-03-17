@@ -2,34 +2,26 @@
 <html lang="ja"><head>
  <meta charset="UTF-8" />
  <title>GitHub Pages 動作確認テスト。(ooblog.github.io)</title>
- <link rel="stylesheet" type="text/css" href="index.css" />
+ <link rel="stylesheet" type="text/css" href="yonmoji.css" />
+ <script src="yonmoji.js"></script>
 </head><body>
  <header>
-  <p><a href="http://ooblog.github.io/" rel="publisher">ooblog.github.io</a> &#62; index.html</p>
+  <span class="breadcrumbs"><a href="http://ooblog.github.io/" rel="publisher" title="http://ooblog.github.io/"><mark>ooblog</mark></a></span>
+  <span class="sitemap"><a href="http://ooblog.github.io/404.html" rel="publisher" title="http://ooblog.github.io/404.html">sitemap(404)</a></span>
+  <br class="sitemapboth" />
  </header>
  <section>
   <article>
-   <H1>GitHub Pages 動作確認テスト。</H1>
-   <p>HTML5のタグを使用。</p>
-  </article>
-  <article>
-   <H2>フォント「kantray5x5comic.woff」動作確認テスト。</H2>
-   <pre class="kantrayFont">
-    @font-face {
-      font-family: "kantray5x5comic";
-      src: url("kantray5x5comic.woff") format('woff');
-    }
-    .kantrayFont {
-      font-family: "kantray5x5comic";
-    }
-    ┏kantray「貼付モード(マウス) ┓
-    ┃ ぬふあうえおやゆよわほへﾇ  ┃
-    ┃  たていすかんなにらせ沼濡  ┃
-    ┃ﾇ  ちとしはきくまのりれけむ ┃
-    ┃＿代つさそひこみもねるめろα┃
-    ┃[代ま⇔ぱ          ]Ｃ← ⇔ ┃
-    ┗━━━━━━━━━━━━━━┛
-   </pre>
+   <H1>検索しない検索エンジン「約四文字」実験中。</H1>
+   <div class="yonmoji">
+    <p class="yonmoji_logo">約四<br />文字</p>
+    <form action="" method="get">
+     <p><label>page：<input type="search" name="page" value="なにこれ"></label> <input type="submit" value="約四文字"></p>
+    </form>
+   </div>
+   <noscript>
+    <p>「約四文字」はスクリプトが無効の場合は動作しません。</p>
+   </noscript>
   </article>
  </section>
  <footer>
