@@ -63,3 +63,13 @@ target/
 
 # yonmoji
 yonmoji_ge/
+kantray.*
+kanmap.*
+kanchar.*
+kanword.*
+kanfont.*
+kanzip.*
+testfile/
+kanzip/
+kanfont.svg
+LTsv_joy.*

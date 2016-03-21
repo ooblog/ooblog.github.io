@@ -26,6 +26,8 @@ function newword(){
 }
 
 
-//# Copyright (c) 2016 ooblog
-//# License: MIT
-//# https://github.com/ooblog/LTsv9kantray/blob/master/LICENSE
+/*
+# Copyright (c) 2016 ooblog
+# License: MIT
+# https://github.com/ooblog/LTsv9kantray/blob/master/LICENSE
+*/
