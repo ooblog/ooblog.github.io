@@ -1,25 +1,35 @@
+var newpage="index";
 function newhref(){
-    var href=window.location.href;
-    if ( href.indexOf("?page=")>=0 && href.indexOf("github.io/")>=0 ){
+    var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|]","g");
+    window.location.href=newpage.replace(regExp,"")+".html";
+}
+function newquery(){
+    var oldhref=window.location.href;
+    if ( oldhref.indexOf("?page=")>=0 && oldhref.indexOf("github.io/")>=0 ){
         var regExp=new RegExp("github\.io\/(.*)page\=","g");
-        href=href.replace(regExp,"github.io/");
-        var page=href.substr(href.indexOf("github.io/")+"github.io/".length)
-        document.forms.entry.page.value=decodeURI(page);
-        href=href+".html";
-        window.location.href=href
+        oldhref=oldhref.replace(regExp,"github.io/");
+        oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length)
+        newpage=decodeURI(oldhref)
+        document.forms.entry.page.value=newpage;
+        setTimeout(newhref,0);
     }
     else{
         newstyle();
     }
 }
+function newword(){
+    newpage=document.forms.entry.page.value;
+    newhref();
+}
+
 if( window.addEventListener ){
-    window.addEventListener('load',newhref,false);
+    window.addEventListener('load',newquery,false);
 }
 else if( window.attachEvent ){
-    window.attachEvent('onload',newhref );
+    window.attachEvent('onload',newquery );
 }
 else{
-    window.onload=newhref;
+    window.onload=newquery;
 }
 
 function newstyle(){
@@ -78,13 +88,6 @@ function newstyle(){
             stylesheet.insertRule("."+key+"  li:nth-child("+i+"):before{ content: '"+data[char]+"'; }",stylesheet.cssRules.length); i++;
         }
     }
-}
-
-function newword(){
-    var word=document.forms.entry.page.value;
-    var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|]","g");
-    word=word.replace(regExp,"");
-    window.location.href=word+".html"
 }
 
 
