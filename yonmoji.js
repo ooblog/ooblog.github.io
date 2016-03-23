@@ -8,13 +8,17 @@ function newquery(){
     if ( oldhref.indexOf("?page=")>=0 && oldhref.indexOf("github.io/")>=0 ){
         var regExp=new RegExp("github\.io\/(.*)page\=","g");
         oldhref=oldhref.replace(regExp,"github.io/");
-        oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length)
-        newpage=decodeURI(oldhref)
+        oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
+        newpage=decodeURI(oldhref);
         document.forms.entry.page.value=newpage;
         setTimeout(newhref,0);
     }
     else{
         newstyle();
+        oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
+        if ( oldhref=="" || oldhref=="index.html" ){
+            document.forms.entry.page.focus();
+        }
     }
 }
 function newword(){
@@ -79,12 +83,12 @@ function newstyle(){
     var syllogismStyle=document.createElement('style'); syllogismStyle.type="text/css";
     document.getElementsByTagName('head').item(0).appendChild(syllogismStyle);
     var stylesheet= document.styleSheets[document.styleSheets.length-1];
-    for(key in styledic){
+    for( key in styledic ){
         stylesheet.insertRule("."+key+"{  margin-left: 1em;  margin-bottom: 3em;  list-style-type: none;  }",stylesheet.cssRules.length);
         stylesheet.insertRule("."+key+" li{  margin-bottom: 0.5em;  text-indent: -2em;  }",stylesheet.cssRules.length);
         stylesheet.insertRule("."+key+" li:before{  margin-right: 1em;  font-size: large;  }",stylesheet.cssRules.length);
         var data=styledic[key].split(""); var i=1;
-        for(char in data){
+        for( char in data ){
             stylesheet.insertRule("."+key+"  li:nth-child("+i+"):before{ content: '"+data[char]+"'; }",stylesheet.cssRules.length); i++;
         }
     }
