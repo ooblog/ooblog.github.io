@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja"><head>
  <meta charset="UTF-8" />
- <title>やくよん-「約四文字」(ooblog.github.io)</title>
+ <title>ぶっくま-「約四文字」(ooblog.github.io)</title>
  <link rel="stylesheet" type="text/css" href="yonmoji.css" />
  <link rel="icon" href="http://ooblog.github.io/favicon.png" type="image/png">
  <link rel="search" type="application/opensearchdescription+xml" href="http://ooblog.github.io/opensearch.xml" title="「約四文字」">
@@ -9,7 +9,7 @@
 </head><body>
  <header>
   <div class="yonmoji_root"><a href="http://ooblog.github.io/" rel="publisher" title="http://ooblog.github.io/">約四<br /></a><a href="http://ooblog.github.io/" rel="publisher" title="http://ooblog.github.io/">文字</a></div>
-  <span> &#62; <mark>やくよん</mark></span>
+  <span> &#62; <mark>ぶっくま</mark></span>
   <span class="yonmoji_sitemap"><a href="404.html" title="http://ooblog.github.io/404.html">sitemap(404)</a></span>
 <?sitemap?>
   <br class="yonmoji_both" />
@@ -17,18 +17,24 @@
  <section>
   <article>
    <div class="yonmoji">
-    <H1 class="yonmoji_word">やく<br />よん</H1>
-    <H2>「約四文字(やくよん)」は架空の検索エンジンです。</H2>
+    <H1 class="yonmoji_word">ぶっ<br />くま</H1>
+    <H2>「ブックマークレット(ぶっくま)」は<br />ブラウザのブックマークで動作する検索ダイアログです。</H2>
     <br class="yonmoji_both" />
    </div>
    <ol class="yonmoji_kiketsushouten">
-    <li>よくアニメとかドラマとかでググる時Google先生の代わりに架空の検索エンジン出てくる。</li>
-    <li>逆に架空の検索エンジンを作ってしまうのはどうだろうと思いついた(自作の小説用途などに便利)。</li>
-    <li>架空の検索エンジンだけどURLが存在していれば便乗フィッシングサイトから読者を守れる。</li>
-    <li>フィッシングとは違うけど「電車男」劇中掲示板に似た名前の「Aチャンネル」みたいに名称が普通に被る場合も。</li>
+    <li>ブラウザの「ブックマーク」にJavaScriptを登録して使用できる検索ダイアログです。</li>
+    <li>テキストを選択した状態で検索ダイアログを開くと選択テキストが最初から代入されます。<br />ダイアログ内で入力変更も可能です。</li>
+    <li>OKボタンで、ダイアログに入力したページ名でページが表示されるはずです。</li>
+    <li>
+     実は「<a href="javascript:(function(){%20var%20d=document;var%20s=d.selection?d.selection.createRange().text:d.getSelection();%20var%20t=prompt('page%EF%BC%9A['+s+']%E7%B4%84%E5%9B%9B%E6%96%87%E5%AD%97',s);%20if(t.length>0){var%20regExp=new%20RegExp('[/|\\|:|*|?|<|>|\|]','g');t=t.replace(regExp,'');window.open('http://ooblog.github.io/'+t+'.html');}%20})();" title="「約四文字」検索ダイアログ(ブックマークレット)">「約四文字」検索ダイアログ</a>」をブックマークに登録するよりも、<br />
+     ブラウザ右上の検索バーから「<a href=""http://ooblog.github.io/opensearch.xml" title="http://ooblog.github.io/opensearch.xml">opensearch.xml</a>」を登録するといわゆる「検索プロバイダー」っぽく、<br />
+     URL「http://http://ooblog.github.io/?page=ぶっくま」を発行させてより検索っぽい挙動に寄せる事も可能です。<br />
+    </li>
    </ol>
    <p>
-    フォント「kantray5x5comic.woff」を表示テストする簡易的サイトを作るつもりが気がつくとなぜか違うサイトに。<br />
+    本来「/?page=ぶっくま」といったクエリーはGitHubで動きません。<br />
+    JavaScriptでそれっぽく見せてるだけなので勘違いを伝聞しないよう注意。<br />
+    一旦トップページ(<a href="index.html" title="index.html">index.html</a>)を読み込むのが二度手間だし鯖負荷だしなのでブックマークレット推奨なのです。<br />
    </p>
    </article>
  </section>
