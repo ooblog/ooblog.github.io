@@ -3,6 +3,8 @@ function newhref(){
     if ( href.indexOf("?page=")>=0 && href.indexOf("github.io/")>=0 ){
         var regExp=new RegExp("github\.io\/(.*)page\=","g");
         href=href.replace(regExp,"github.io/");
+        var page=href.substr(href.indexOf("github.io/")+"github.io/".length)
+        document.forms.entry.page.value=decodeURI(page);
         href=href+".html";
         window.location.href=href
     }
