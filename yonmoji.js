@@ -1,6 +1,6 @@
 var newpage="index";
 function newhref(){
-    var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|]","g");
+    var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|\%]","g");
     window.location.href=newpage.replace(regExp,"")+".html";
 }
 function newquery(){
@@ -44,7 +44,6 @@ function newstyle(){
      "yonmoji_kishoutenketsu":      "起承転結",
      "yonmoji_kishouhojoketsu":     "起承鋪叙結",
      "yonmoji_kishouhojokaketsu":   "起承鋪叙過結",
-     "yonmoji_kishouhojokaketsu":   "起承鋪叙過結",
      "yonmoji_kishouketsu":         "起承結終",
      "yonmoji_shoutententen":       "承転転転転転転転",
      "yonmoji_tentententen":        "転転転転転転転転",
@@ -67,8 +66,8 @@ function newstyle(){
      "yonmoji_kanki":               "乾乾乾乾乾乾乾乾",
      "yonmoji_tozainannboku":       "東西南北中",
      "yonmoji_seishuhakugen":       "青朱白玄",
-     "yonmoji_moshimo":             "忍竜武精死",
      "yonmoji_biyori":              "最極凶劣",
+     "yonmoji_moshimo":             "忍竜武精死",
      "yonmoji_bunmei":              "独米英仏伊日中韓",
      "yonmoji_decimal":             "１２３４５６７８９",
      "yonmoji_circle":              "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳",
@@ -84,9 +83,9 @@ function newstyle(){
     document.getElementsByTagName('head').item(0).appendChild(syllogismStyle);
     var stylesheet= document.styleSheets[document.styleSheets.length-1];
     for( key in styledic ){
-        stylesheet.insertRule("."+key+"{  margin-left: 1em;  margin-bottom: 3em;  list-style-type: none;  }",stylesheet.cssRules.length);
-        stylesheet.insertRule("."+key+" li{  margin-bottom: 0.5em;  text-indent: -2em;  }",stylesheet.cssRules.length);
-        stylesheet.insertRule("."+key+" li:before{  margin-right: 1em;  font-size: large;  }",stylesheet.cssRules.length);
+        stylesheet.insertRule("."+key+"{  margin-left: 1rem;  margin-bottom: 3rem;  list-style-type: none;  }",stylesheet.cssRules.length);
+        stylesheet.insertRule("."+key+" li{  margin-bottom: 0.5rem;  text-indent: -2rem;  }",stylesheet.cssRules.length);
+        stylesheet.insertRule("."+key+" li:before{  margin-right: 1rem;  font-size: 1.4rem;  }",stylesheet.cssRules.length);
         var data=styledic[key].split(""); var i=1;
         for( char in data ){
             stylesheet.insertRule("."+key+"  li:nth-child("+i+"):before{ content: '"+data[char]+"'; }",stylesheet.cssRules.length); i++;

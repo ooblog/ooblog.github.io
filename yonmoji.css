@@ -3,9 +3,6 @@
   font-family: "kantray5x5comic";
   src: url("kantray5x5comic.woff") format('woff');
 }
-.kantrayFont{
-  font-family: "kantray5x5comic";
-}
 body{
   background-color: white;
 }
@@ -15,13 +12,14 @@ mark{
 }
 header{
   border: 1px gray dotted;
-  padding: 1em;
+  padding: 1rem;
 }
  .yonmoji_root{
-   font-family: "kantray5x5comic"; font-size: 1em;
+   font-family: "kantray5x5comic"; font-size: 1rem;
+   line-height: 1rem;
    float: left;
-   margin-top: -0.5em;
-   padding-right: 0.5em;
+   margin-top: -0.5rem;
+   padding-right: 0.5rem;
  }
  .yonmoji_root > a:nth-child(odd){
    text-decoration: none;
@@ -33,45 +31,41 @@ header{
    float: both;
  }
 section{
-  margin-top: 1em;
+  margin-top: 1rem;
   border: 2px black solid;
-  padding: 1em;
+  padding: 1rem;
 }
-
-input{
+input.yonmoji_entry{
   border: solid 1px orange;
-  background-color: white;
+  width: 12rem;
 }
-input:focus{
+input.yonmoji_entry:focus{
   border: solid 2px IndianRed;
-  background-color: white;
 }
  .yonmoji{
-   width: 100%;
+   width: 100%;  margin: 0 auto;
    text-align: center;
-   margin: 0 auto;
-   padding-top: 1em;
-   padding-bottom: 0em;
+   padding-top: 1rem;
  }
  .yonmoji_logo{
-   font-family: "kantray5x5comic"; font-size: 100px;
-   width: 100%;
+   font-family: "kantray5x5comic"; font-size: 5rem;
+   line-height: 5rem;
    margin: 0 auto;
  }
  .yonmoji_word{
-   font-family: "kantray5x5comic"; font-size: 25px;
+   font-family: "kantray5x5comic"; font-size: 2rem;
+   line-height: 2rem;
    float: left;
-   margin: 0em;
-   padding-right: 1em;
+   margin: 0rem;
  }
-h1{ font-size: xx-large; }
-h2{ font-size: x-large; }
-h3{ font-size: large; }
-h4{ font-size: large; }
-h5{ font-size: large; }
-h6{ font-size: large; }
+h1{ font-size: 2.0rem; }
+h2{ font-size: 1.8rem; }
+h3{ font-size: 1.6rem; }
+h4{ font-size: 1.4rem; }
+h5{ font-size: 1.2rem; }
+h6{ font-size: 1.0rem; }
 footer{
-  margin-top:1em;
+  margin-top:1rem;
   border: 1px gray dotted;
   text-align: center;
 }

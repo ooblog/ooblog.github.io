@@ -65,6 +65,7 @@ target/
 # git push github:ooblog/ooblog.github.io.git master
 # git log
 # git commit -a -m ""
+blog_hatena/
 yonmoji_ge/
 kantray.*
 kanmap.*
