@@ -69,14 +69,3 @@ target/
 # git checkout master
 # git merge branch
 blog_hatena/
-yonmoji_ge/
-kantray.*
-kanmap.*
-kanchar.*
-kanword.*
-kanfont.*
-kanzip.*
-testfile/
-kanzip/
-kanfont.svg
-LTsv_joy.*
