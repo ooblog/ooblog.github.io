@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "kantray5x5comic";
+  src: url("../kantray5x5comic.woff") format('woff');
+}
+.kantrayFont {
+  font-family: "kantray5x5comic";
+}
+header{
+  border: 1px gray dotted;
+}
+section{
+  border:2px black solid;
+  margin-top: 1rem;
+  margin-right: 15rem;
+  padding: 1rem;
+}
+aside{
+  border: 1px gray dotted;
+  float: right;
+  width: 12rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+h1{ font-size: 2.0rem; }
+h2{ font-size: 1.8rem; }
+h3{ font-size: 1.6rem; }
+h4{ font-size: 1.4rem; }
+h5{ font-size: 1.2rem; }
+h6{ font-size: 1.0rem; }
+footer{
+  border: 1px gray dotted;
+  float: both;
+  margin-top: 1rem;
+  text-align: center;
+}
