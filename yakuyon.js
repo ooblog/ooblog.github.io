@@ -1,11 +1,12 @@
 var newpage="index";
+var samplepage=["よんもじ","やくよん","ぶっくま","ふぉんと"];
 function newhref(){
     var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|\%]","g");
     window.location.href=newpage.replace(regExp,"")+".html";
 }
 function newquery(){
     var oldhref=window.location.href;
-    if ( oldhref.indexOf("?page=")>=0 && oldhref.indexOf("github.io/")>=0 ){
+    if( oldhref.indexOf("?page=")>=0 && oldhref.indexOf("github.io/")>=0 ){
         var regExp=new RegExp("github\.io\/(.*)page\=","g");
         oldhref=oldhref.replace(regExp,"github.io/");
         oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
@@ -16,13 +17,21 @@ function newquery(){
     else{
         newstyle();
         oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
-        if ( oldhref=="" || oldhref=="index.html" ){
+        oldhref=oldhref.replace(".html","");
+        if ( oldhref=="" || oldhref=="index" ){
             document.forms.entry.page.focus();
         }
+        if ( oldhref=="" || oldhref=="index" || oldhref=="404" ){
+            newpage=samplepage[Math.floor(Math.random()*samplepage.length)]
+        }
+        else{
+            newpage=decodeURI(oldhref)
+        }
+        document.forms.entry.page.placeholder=newpage;
     }
 }
 function newword(){
-    newpage=document.forms.entry.page.value;
+    if( document.forms.entry.page.value.length>0 ){ newpage=document.forms.entry.page.value; }
     newhref();
 }
 
@@ -77,7 +86,7 @@ function newstyle(){
      "yonmoji_upper-alpha":         "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ",
      "yonmoji_iroha-hiragana":      "いろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせす",
      "yonmoji_iroha-katakana":      "イロハニホヘトチリヌルヲワカヨタレソツネナラムウヰノオクヤマケフコエテアサキユメミシヱヒモセス",
-     "yonmoji_todofuken":           "北青岩城秋形島茨栃群埼千東神潟富石井梨野岐静知三滋京阪兵奈和鳥根岡広口徳川媛高福佐長熊分宮鹿沖"
+     "yonmoji_todofuken":           "北青岩城秋形島茨栃群埼千東神潟富石井梨野岐静知三滋京阪兵奈和鳥根岡広口徳川媛高福佐長熊分宮鹿沖",
      "yonmoji_grandchild":           "子孫曽玄来昆仍雲"
     };
     var syllogismStyle=document.createElement('style'); syllogismStyle.type="text/css";
