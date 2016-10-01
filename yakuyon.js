@@ -10,6 +10,7 @@ function newquery(){
         var regExp=new RegExp("github\.io\/(.*)page\=","g");
         oldhref=oldhref.replace(regExp,"github.io/");
         oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
+        oldhref=oldhref.replace("%E2%80%8E","");
         newpage=decodeURI(oldhref);
         document.forms.entry.page.value=newpage;
         setTimeout(newhref,0);
