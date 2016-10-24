@@ -1,7 +1,7 @@
 # 「ooblog.github.io」はooblogの「GitHub Pages」です。
 
 サイト「約四文字」のページはこちら。  
-[https://ooblog.github.io/](http://ooblog.github.io/)  
+[https://ooblog.github.io/](https://ooblog.github.io/)  
 
 サイトジェネレータ「yonmoji&#95;ge」のページはこちら。  
 [https://github.com/ooblog/yonmoji_ge](https://github.com/ooblog/yonmoji_ge)  
