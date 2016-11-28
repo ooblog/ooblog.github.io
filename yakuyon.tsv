@@ -315,6 +315,7 @@ AAAASUVORK5CYII=
 |<＃yakuyon_ICON>]
 
 [<？title>|
+^index\.html?	<？yakuyon>
 .*	<＃yakuyon_outlist> - <？yakuyon>
 |<？title>]
 
