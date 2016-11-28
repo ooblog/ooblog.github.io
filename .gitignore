@@ -62,6 +62,7 @@ target/
 .ipynb_checkpoints
 
 
+# git status
 # git push github:ooblog/ooblog.github.io.git master
 # git push github:ooblog/ooblog.github.io.git branch
 # git log
@@ -73,3 +74,4 @@ target/
 # git branch -d branch
 # git push github:ooblog/ooblog.github.io.git :branch
 blog_hatena/
+test.*

@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face{
   font-family: "kan5x5comic";
-  src: url("kan5x5comic.woff") format('woff');
+  src: url("https://ooblog.github.io/kan5x5comic.woff") format('woff');
 }
 body{
   background-color: white;
@@ -10,6 +10,14 @@ mark{
   background-color: white;
   border: 1px pink solid;
 }
+mark.applogo{
+  border: 0px;
+}
+ mark.applogo > img{
+   margin: -1rem 0rem -1rem;
+   vertical-align: middle;
+   border: 1px pink solid;
+ }
 header{
   border: 1px gray dotted;
   padding: 1rem;
@@ -61,6 +69,11 @@ input.yonmoji_entry:focus{
    float: left;
    margin: 0rem;
  }
+article{
+  margin-top: 0.5rem;
+  border: 1px gray solid;
+  padding: 1rem;
+}
 aside{
   border: 1px gray dotted;
   float: right;
@@ -68,21 +81,33 @@ aside{
   margin-top: 1rem;
   padding: 1rem;
 }
-h1{ font-size: 2.0rem; }
-h2{ font-size: 1.8rem; }
-h3{ font-size: 1.6rem; }
-h4{ font-size: 1.4rem; }
-h5{ font-size: 1.2rem; }
-h6{ font-size: 1.0rem; }
 footer{
   margin-top:1rem;
   float: both;
   border: 1px gray dotted;
   text-align: center;
 }
+p.ooblog{
+  text-align: left;
+  padding: 1rem 1rem 0em;
+}
+dt{
+  font-weight: bold;
+  word-wrap: break-word; word-break: break-all;
+}
+dd{
+  word-wrap: break-word; word-break: break-all;
+}
+h1{ font-size: 2.0rem; margin: 1rem 0.5rem 0.5rem; }
+h2{ font-size: 1.8rem; margin: 1rem 0.5rem 0.5rem; }
+h3{ font-size: 1.6rem; margin: 1rem 0.5rem 0.5rem; }
+h4{ font-size: 1.4rem; margin: 1rem 0.5rem 0.5rem; }
+h5{ font-size: 1.2rem; margin: 1rem 0.5rem 0.5rem; }
+h6{ font-size: 1.0rem; margin: 1rem 0.5rem 0.5rem; }
 
 /*
 # Copyright (c) 2016 ooblog
 # License: MIT
-# https://github.com/ooblog/LTsv9kantray/blob/master/LICENSE
+# https://github.com/ooblog/LTsv10kanedit/blob/master/LICENSE
 */
+

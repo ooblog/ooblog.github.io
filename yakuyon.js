@@ -1,5 +1,5 @@
 var newpage="index";
-var samplepage=["よんもじ","やくよん","ぶっくま","ふぉんと"];
+var samplepage=["やくよん","ぶっくま","ふぉんと"];
 function newhref(){
     var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|\%]","g");
     window.location.href=newpage.replace(regExp,"")+".html";
@@ -108,5 +108,6 @@ function newstyle(){
 /*
 # Copyright (c) 2016 ooblog
 # License: MIT
-# https://github.com/ooblog/LTsv9kantray/blob/master/LICENSE
+# https://github.com/ooblog/LTsv10kanedit/blob/master/LICENSE
 */
+

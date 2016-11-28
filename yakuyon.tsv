@@ -1,0 +1,539 @@
+[L:Tsv|
+code	UTF-8
+enter	LF
+tab	4
+program	LTsv_doc.py
+1st		LTsv_doc
+LTsvver	20161023U011852
+modify	20161127U130930
+|L:Tsv]
+
+[LTsv_doc|
+main	<＃yakuyon_main>
+tagseparate	*
+outdir	../../ooblog.github.io/
+outlist	<＃yakuyon_outlist>
+|LTsv_doc]
+
+[<＃yakuyon_main>|
+<？LTsv_doc_ext>
+|<＃yakuyon_main>]
+
+[<？LTsv_doc_ext>|
+.+\.html?	<＃yakuyon_HTML>
+.+\.css	<＃yakuyon_CSS>
+.+\.js	<＃yakuyon_JS>
+^opensearch\.xml$	<＃yakuyon_SEARCH>
+|<？LTsv_doc_ext>]
+
+[<＃yakuyon_HTML>|
+<?DOCTYPE html>
+<html lang="ja"><head>
+ <meta charset="UTF-8" />
+ <meta name="description" content="">
+ <title><？title></title>
+ <link rel="stylesheet" type="text/css" href="yakuyon.css" />
+ <link rel="icon" type="image/png" href="favicon.png" />
+ <link rel="search" type="application/opensearchdescription+xml" href="https://ooblog.github.io/opensearch.xml" title="「約四文字」" />
+ <script src="yakuyon.js"></script>
+</head><body>
+
+ <header>
+  <div class="yonmoji_root"><a href="https://ooblog.github.io/" rel="publisher" title="https://ooblog.github.io/">約四<br /></a><a href="https://ooblog.github.io/" rel="publisher" title="https://ooblog.github.io/">文字</a></div>
+  <？breadcrumbs>
+  <br class="yonmoji_both" />
+ </header>
+<？pagesummary>
+<？pagelinks>
+ <section>
+  <article>
+   <H1>詮索しない検索エンジン「約四文字」。</H1>
+   <div class="yonmoji">
+    <p class="yonmoji_logo">約四<br />文字</p>
+    <form id="entry" action="" method="get" onsubmit="newword(); return false;">
+     <p><label>page：<input id="page" type="search" name="page" value="" class="yonmoji_entry"></label> <input type="submit" value="約四文字"></p>
+    </form>
+   </div>
+   <noscript>
+    <p>ブラウザのスクリプト設定を有効にすると「約四文字」は作動します。</p>
+   </noscript>
+  </article>
+ </section>
+
+<footer>
+ <p>site generator "<？https99-9:LTsv_doc.py>" repository：<？https99-9:LTsv10repository></p>
+ <p class="ooblog"><？ooblog></p>
+</footer>
+</body></html>
+|<＃yakuyon_HTML>]
+
+[<＃yakuyon_CSS>|
+@charset "utf-8";
+@font-face{
+  font-family: "kan5x5comic";
+  src: url("https://ooblog.github.io/kan5x5comic.woff") format('woff');
+}
+body{
+  background-color: white;
+}
+mark{
+  background-color: white;
+  border: 1px pink solid;
+}
+mark.applogo{
+  border: 0px;
+}
+ mark.applogo > img{
+   margin: -1rem 0rem -1rem;
+   vertical-align: middle;
+   border: 1px pink solid;
+ }
+header{
+  border: 1px gray dotted;
+  padding: 1rem;
+}
+ .yonmoji_root{
+   font-family: "kan5x5comic";  font-size: 1rem;
+   line-height: 1rem;
+   float: left;
+   margin-top: -0.5rem;
+   padding-right: 0.5rem;
+ }
+ .yonmoji_root > a:nth-child(odd){
+   text-decoration: none;
+ }
+ .yonmoji_sitemap{
+   float: right;
+ }
+ yonmoji_both{
+   float: both;
+ }
+section{
+  margin-top: 1rem;
+  border: 2px black solid;
+  padding: 1rem;
+}
+input.yonmoji_entry{
+  border: solid 1px orange;
+  width: 12rem;
+}
+input.yonmoji_entry:focus{
+  border: solid 2px IndianRed;
+}
+ .yonmoji{
+   width: 100%;  margin: 0 auto;
+   text-align: center;
+   padding-top: 1rem;
+   padding-bottom: 0rem;
+ }
+ .yonmoji_logo{
+   font-family: "kan5x5comic";  font-size: 5rem;
+   line-height: 5rem;
+   width: 10rem;
+   height: 10rem;
+   margin: 0 auto;
+ }
+ .yonmoji_word{
+   font-family: "kan5x5comic";  font-size: 2rem;
+   line-height: 2rem;
+   float: left;
+   margin: 0rem;
+ }
+article{
+  margin-top: 0.5rem;
+  border: 1px gray solid;
+  padding: 1rem;
+}
+aside{
+  border: 1px gray dotted;
+  float: right;
+  width: 12rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+footer{
+  margin-top:1rem;
+  float: both;
+  border: 1px gray dotted;
+  text-align: center;
+}
+p.ooblog{
+  text-align: left;
+  padding: 1rem 1rem 0em;
+}
+dt{
+  font-weight: bold;
+  word-wrap: break-word; word-break: break-all;
+}
+dd{
+  word-wrap: break-word; word-break: break-all;
+}
+h1{ font-size: 2.0rem; margin: 1rem 0.5rem 0.5rem; }
+h2{ font-size: 1.8rem; margin: 1rem 0.5rem 0.5rem; }
+h3{ font-size: 1.6rem; margin: 1rem 0.5rem 0.5rem; }
+h4{ font-size: 1.4rem; margin: 1rem 0.5rem 0.5rem; }
+h5{ font-size: 1.2rem; margin: 1rem 0.5rem 0.5rem; }
+h6{ font-size: 1.0rem; margin: 1rem 0.5rem 0.5rem; }
+
+/*
+<？ooblog>*/
+|<＃yakuyon_CSS>]
+
+[<＃yakuyon_JS>|
+var newpage="index";
+var samplepage=["やくよん","ぶっくま","ふぉんと"];
+function newhref(){
+    var regExp=new RegExp("[/|\\|:|*|?|\"|<|>|\|\%]","g");
+    window.location.href=newpage.replace(regExp,"")+".html";
+}
+function newquery(){
+    var oldhref=window.location.href;
+    if( oldhref.indexOf("?page=")>=0 && oldhref.indexOf("github.io/")>=0 ){
+        var regExp=new RegExp("github\.io\/(.*)page\=","g");
+        oldhref=oldhref.replace(regExp,"github.io/");
+        oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
+        oldhref=oldhref.replace("%E2%80%8E","");
+        newpage=decodeURI(oldhref);
+        document.forms.entry.page.value=newpage;
+        setTimeout(newhref,0);
+    }
+    else{
+        newstyle();
+        oldhref=oldhref.substr(oldhref.indexOf("github.io/")+"github.io/".length);
+        oldhref=oldhref.replace(".html","");
+        if ( oldhref=="" || oldhref=="index" ){
+            document.forms.entry.page.focus();
+        }
+        if ( oldhref=="" || oldhref=="index" || oldhref=="404" ){
+            newpage=samplepage[Math.floor(Math.random()*samplepage.length)]
+        }
+        else{
+            newpage=decodeURI(oldhref)
+        }
+        document.forms.entry.page.placeholder=newpage;
+    }
+}
+function newword(){
+    if( document.forms.entry.page.value.length>0 ){ newpage=document.forms.entry.page.value; }
+    newhref();
+}
+
+if( window.addEventListener ){
+    window.addEventListener('load',newquery,false);
+}
+else if( window.attachEvent ){
+    window.attachEvent('onload',newquery);
+}
+else{
+    window.onload=newquery;
+}
+
+function newstyle(){
+    var styledic={
+     "yonmoji_‎syllogism":           "大小結",
+     "yonmoji_shuhar":              "守破離",
+     "yonmoji_johakyu":             "序破急",
+     "yonmoji_kishoutenketsu":      "起承転結",
+     "yonmoji_kishouhojoketsu":     "起承鋪叙結",
+     "yonmoji_kishouhojokaketsu":   "起承鋪叙過結",
+     "yonmoji_kishouketsu":         "起承結終",
+     "yonmoji_shoutententen":       "承転転転転転転転",
+     "yonmoji_tentententen":        "転転転転転転転転",
+     "yonmoji_kiketsu":             "起結",
+     "yonmoji_tsuriketunige":       "釣結逃",
+     "yonmoji_kiketsushouten":      "起結承転",
+     "yonmoji_ketsushoutentei":     "結承転提",
+     "yonmoji_kishoutenketsuyami":  "起承転結闇",
+     "yonmoji_PDCA":                "ＰＤＣＡＰＤＣＡＰＤＣＡ",
+     "yonmoji_PPPP":                "ＰＰＰＰＰＰＰＰＰＰＰＰ",
+     "yonmoji_DDDD":                "ＤＤＤＤＤＤＤＤＤＤＤＤ",
+     "yonmoji_ganbaru":             "頑頑頑頑頑頑頑頑頑頑頑頑",
+     "yonmoji_asahiruyoru":         "朝昼夜徹明朝昼夜徹明",
+     "yonmoji_QVSA":                "ＱＶＳＡＱＶＳＡＱＶＳＡ",
+     "yonmoji_shunkashutou":        "春夏秋冬春夏秋冬春夏秋冬",
+     "yonmoji_shunbaikashutou":     "春梅夏秋冬春梅夏秋冬春梅夏秋冬",
+     "yonmoji_shunbaikaakisametou": "春梅夏秋雨冬春梅夏秋雨冬春梅夏秋雨冬",
+     "yonmoji_ame":                 "雨雨雨雨雨雨雨雨",
+     "yonmoji_yuki":                "雪雪雪雪雪雪雪雪",
+     "yonmoji_kanki":               "乾乾乾乾乾乾乾乾",
+     "yonmoji_tozainannboku":       "東西南北中",
+     "yonmoji_moshimo":             "忍竜武精死",
+     "yonmoji_seishuhakugen":       "青朱白玄",
+     "yonmoji_biyori":              "最極凶劣",
+     "yonmoji_bunmei":              "独米英仏伊日中韓",
+     "yonmoji_decimal":             "１２３４５６７８９",
+     "yonmoji_circle":              "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳",
+     "yonmoji_ideographic":         "一二三四五六七八九十",
+     "yonmoji_roman":               "ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ",
+     "yonmoji_lower-alpha":         "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ",
+     "yonmoji_upper-alpha":         "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ",
+     "yonmoji_iroha-hiragana":      "いろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせす",
+     "yonmoji_iroha-katakana":      "イロハニホヘトチリヌルヲワカヨタレソツネナラムウヰノオクヤマケフコエテアサキユメミシヱヒモセス",
+     "yonmoji_todofuken":           "北青岩城秋形島茨栃群埼千東神潟富石井梨野岐静知三滋京阪兵奈和鳥根岡広口徳川媛高福佐長熊分宮鹿沖",
+     "yonmoji_grandchild":           "子孫曽玄来昆仍雲"
+    };
+    var syllogismStyle=document.createElement('style'); syllogismStyle.type="text/css";
+    document.getElementsByTagName('head').item(0).appendChild(syllogismStyle);
+    var stylesheet=document.styleSheets[document.styleSheets.length-1];
+    for( key in styledic ){
+        stylesheet.insertRule("."+key+"{  margin-left: 1rem;  margin-bottom: 3rem;  list-style-type: none;  }",stylesheet.cssRules.length);
+        stylesheet.insertRule("."+key+" li{  margin-bottom: 0.5rem;  text-indent: -2rem;  }",stylesheet.cssRules.length);
+        stylesheet.insertRule("."+key+" li:before{  margin-right: 1rem;  font-size: 1.4rem;  }",stylesheet.cssRules.length);
+        var data=styledic[key].split(""); var i=1;
+        for( char in data ){
+            stylesheet.insertRule("."+key+"  li:nth-child("+i+"):before{ content: '"+data[char]+"'; }",stylesheet.cssRules.length); i++;
+        }
+    }
+}
+
+
+/*
+<？ooblog>*/
+|<＃yakuyon_JS>]
+
+[<＃yakuyon_SEARCH>|
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>「約四文字」</ShortName>
+  <Description>詮索しない検索エンジン「約四文字」。</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16">data:image/x-icon;base64,<＃yakuyon_ICON></Image>
+  <Url type="text/html" method="GET" template="https://ooblog.github.io/?page={searchTerms}" />
+</OpenSearchDescription>
+|<＃yakuyon_SEARCH>]
+
+[<＃yakuyon_FEED>|
+|<＃yakuyon_FEED>]
+
+[<＃yakuyon_ICON>|
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAA8FBMVEXU1NSEhISDg4P///96enqMjIyWlpbExMSGhobY2NhwcHAAAACLi4sKCgp5eXmkpKRnZ2e1tbVX
+V1eTk5NdXV1fX1+ZmZnJycmYmJiqqqqrq6tra2sVFRW8vLzc3Nyfn5+ysrJAQEC5ubmlpaW/v7+pqamtra1kZGSvr6+cnJzw8PCSkpIrKyshISHT09MWFha0tLTCwsJ4
+eHhCQkJ9fX2VlZUmJiY1NTVLS0uUlJSOjo6IiIh3d3dWVlYxMTGbm5uxsbFYWFi6urpiYmIzMzNoaGg0NDSjo6OHh4cICAhMTEyAgICsrKy7u7vt7e38/Pxxpqz8AAAA
+tklEQVR42i2P1RbDMAxDvWrsMXXMzMzMvP//myVp9eA491hyQt8qgEoTfV3q86MXC8BvsKEP3fkhm6csN7BOxxOfa5f0VYLATQAxvwcOW9Oi01oe2Gx5Bxmm02DIo/Fk
+OuP5wrNcGZaGWNEzLX0B0GpDqdMVhbK5fIGLpXKpUuVavdGklDGaNi0ZmREHJ9RLk1ChIS0cIQWiMQUQUN8xFCQ3s0fcvPAx++UWsmgEq80Oh1NzCfAHCykUGF9RBZoA
+AAAASUVORK5CYII=
+|<＃yakuyon_ICON>]
+
+[<？title>|
+.*	<＃yakuyon_outlist> - <？yakuyon>
+|<？title>]
+
+[<？breadcrumbs>|
+^index\.html?	<？breadcrumbs_404>
+^404\.html?	<span> &#62; <mark><＃yakuyon_outlist></mark></span>
+.*	<span> &#62; <mark><＃yakuyon_outlist></mark></span> <？breadcrumbs_404>
+|<？breadcrumbs>]
+
+[<？breadcrumbs_404>|
+.*	<span class="yonmoji_sitemap"><a href="404.html" title="https://ooblog.github.io/404.html">sitemap(404)</a></span>
+|<？breadcrumbs_404>]
+
+[<？pagesummary>|
+^404\.html?	<＃summary:404>
+^やくよん\.html?	<＃summary:やくよん>
+^ぶっくま\.html?	<＃summary:ぶっくま>
+^ふぉんと\.html?	<＃summary:ふぉんと>
+^LTsv\.html?	<＃summary:LTsv>
+|<？pagesummary>]
+
+[<＃summary:404>|
+ <section>
+  <div class="yonmoji">
+   <H2 class="yonmoji_word">４０<br />　４</H2>
+   <H3>404 Not Found。</H3>
+   <br class="yonmoji_both" />
+  </div>
+  <ol class="yonmoji_ketsushoutentei">
+   <li>「<dfn>(<abbr title="404 Not Found"><＃yakuyon_outlist></abbr>)</dfn>」はページが見つからない事を表すHTTPステータスコードです。</li>
+   <li>入力欄に入力した単語のページに移動するはずでした。</li>
+   <li>GitHub Pageでは404エラーが発生するとこの「404.html」を表示します。</li>
+   <li>単語が思いつかない、その他不具合などの疑いがある場合、<br />入力欄に「やくよん」「ぶっくま」「ふぉんと」と入力してみて動作確認してみてください。</li>
+  </ol>
+ </section>
+|<＃summary:404>]
+
+[<＃summary:やくよん>|
+ <section>
+  <div class="yonmoji">
+   <H2 class="yonmoji_word">やく<br />よん</H2>
+   <H3>「<dfn>約四文字(<abbr title="約四文字"><＃yakuyon_outlist></abbr>)</dfn>」は<br />架空の検索エンジンです。</H3>
+   <br class="yonmoji_both" />
+  </div>
+  <ol class="yonmoji_kiketsushouten">
+   <li>よくアニメとかドラマとかでググる時Google先生の代わりに架空の検索エンジン出てくる。</li>
+   <li>逆に架空の検索エンジンを作ってしまうのはどうだろうと思いついた(自作の小説用途などに便利)。</li>
+   <li>架空の検索エンジンだけどURLが存在していれば便乗フィッシングサイトから読者を守れる。</li>
+   <li>フィッシングとは違うけど名前の衝突、<br />
+    例えばRSSなどフィード規格の方の「<a href="https://www.intertwingly.net/wiki/pie/Rss20AndAtom10Compared" title="Rss20AndAtom10Compared - Atom Wiki">Atom</a>」を「<a href="https://www.google.com/search?q=Atom" title="Atom - Google 検索">Atom</a>」でググってもテキストエディタの「<a href="https://atom.io/" title="Atom A hackable text editor">Atom</a>」出てくる感。<br />
+   </li>
+  </ol>
+  <p>
+   当初は「<a href="ふぉんと.html" title="フォントkan5x5comic(ふぉんと)">フォントkan5x5comic</a>」を表示テストする簡易サイトを作るつもりだったけど、おまけの検索風の何かが本体に。<br />
+  </p>
+ </section>
+|<＃summary:やくよん>]
+
+[<＃summary:ぶっくま>|
+ <section>
+  <div class="yonmoji">
+   <H2 class="yonmoji_word">ぶっ<br />くま</H2>
+   <H3>「<dfn>ブックマークレット(<abbr title="ブックマークレット"><＃yakuyon_outlist></abbr>)</dfn>」は<br />ブラウザのブックマークで動作する検索ダイアログです。</H3>
+   <br class="yonmoji_both" />
+  </div>
+  <ol class="yonmoji_kiketsushouten">
+   <li>ブラウザの「ブックマーク」にJavaScriptを登録して使用できる検索ダイアログです。</li>
+   <li>テキストを選択した状態で検索ダイアログを開くと選択テキストが最初から代入されます。<br />ダイアログ内で入力変更も可能です。</li>
+   <li>OKボタンで、ダイアログに入力したページ名でページが表示されるはずです。</li>
+   <li>
+    実は「<a href="javascript:(function(){%20var%20d=document;var%20s=d.selection?d.selection.createRange().text:d.getSelection();%20var%20t=prompt('page%EF%BC%9A['+s+']%E7%B4%84%E5%9B%9B%E6%96%87%E5%AD%97',s);%20if(t.length>0){var%20regExp=new%20RegExp('[/|\\|:|*|?|<|>|\|]','g');t=t.replace(regExp,'');window.open('<?sitename?>'+t+'.html');}%20})();" title="「約四文字」検索ダイアログ(ブックマークレット)">「約四文字」検索ダイアログ</a>」をブックマークに登録するよりも、<br />
+    ブラウザ右上の検索バーから「<a href="<?sitename?>opensearch.xml" title="<?sitename?>opensearch.xml">opensearch.xml</a>」を登録するといわゆる「検索プロバイダー」っぽく、<br />
+    URL「https://<?sitename?>?page=<!pagename!>」を発行させてより検索っぽい挙動に寄せる事も可能です。<br />
+   </li>
+   </ol>
+  <p>
+   「/?page=<!pagename!>」といったクエリーは「<a href="https://pages.github.com/" title="GitHub Pages - Websites for you and your projects.">GitHub Pages</a>」で動きません。JavaScriptでそれっぽく見せてるだけなので注意。<br />
+  </p>
+ </section>
+|<＃summary:ぶっくま>]
+
+[<＃summary:ふぉんと>|
+ <section>
+  <div class="yonmoji">
+   <H2 class="yonmoji_word">ふぉ<br />んと</H2>
+   <H3>「<dfn>フォントkan5x5comic(<abbr title="フォントkan5x5comic"><＃yakuyon_outlist></abbr>)</dfn>」は<br />「kanfont(LTsv10kanedit)」で作成できるフォントです。</H3>
+   <br class="yonmoji_both" />
+  </div>
+  <ol class="yonmoji_‎syllogism">
+   <li>
+    ここ「約四文字」のサイトやロゴにも使ってる「kan5x5comic」フォントです。<br />
+    「kan5x5」の「活」グリフと「漫」グリフを混ぜてるのでアンチックフォントに近いです。<br />
+   </li>
+   <li>
+    「kanfont」から直接フォントが生成できないので「FontForge」が使えないWindows環境対策で、
+    「<a href="https://ooblog.github.io/kan5x5comic.woff" title="kan5x5comic.woff">kan5x5comic.woff</a>」を「kan5x5comic.ttf」に例えば「<a href="http://opentype.jp/woffconv.htm" title="WOFFコンバータ">WOFFコンバータ</a>」で変換と言う流れも想定しました。<br />
+     Linux環境なら「kan5x5.svg」を「FontForge」で「kan5x5comic.ttf」に変換します。<br />
+   </li>
+   <li>
+    「<a href="https://github.com/ooblog/LTsv10kanedit" title="ooblog/LTsv10kanedit">kanfont(LTsv10kanedit)</a>」の使い方は「<a href="https://github.com/ooblog/LTsv10kanedit" title="ooblog/LTsv10kanedit">https://github.com/ooblog/LTsv10kanedit</a>」を参考。
+   </li>
+  </ol>
+  <p>
+   フォント「kan5x5comic」のライセンスも「kanfont」に準拠。
+  </p>
+ </section>
+|<＃summary:ふぉんと>]
+
+[<＃summary:LTsv>|
+ <section>
+  <div class="yonmoji">
+   <H2 class="yonmoji_word">ＬＴ<br />ＳＶ</H2>
+   <H3>「<dfn>「L:Tsv」(<abbr title="「L:Tsv」"><＃yakuyon_outlist></abbr>)</dfn>」は<br />「LTSV」の読み書きを中心としたモジュール群です。</H3>
+   <br class="yonmoji_both" />
+  </div>
+  <ol class="yonmoji_johakyu">
+   <li>
+    「L:Tsv」は基本的には<a href="http://ltsv.org/" title="Labeled Tab-separated Values (LTSV)">LTSV</a>ファイルを読み書きするPythonモジュールです(「L:Tsv」は「LTSV」を勝手に独自に拡張しています)。<br />
+    2系3系の差分を吸収したり、GTKやTkinterの差分吸収も試みたり雑多なモジュールと化してます。<br />
+   </li>
+   <li>
+    最近の「L:Tsv」は漢直(漢字直接入力)エディタの開発に力を入れてます。<br />
+    「Tkinter」がCP932(いわゆるシフトJIS、BMP基本多言語面0xffff範囲内)を越える3バイト以上のUTF-8文字を扱えない問題対策でフォントエディタ(グリフエディタ)とかも作ってます。<br />
+   </li>
+   <li>
+    モジュールの関数増減を管理するためドキュメント作成ツールも作りました。そのままサイトジェネレーターに流用できる事に気が付いたので、<br />
+    <？yakuyon>も「<？https99-9:LTsv10repository>」の「<？https99-9:LTsv_doc.py>」を使って出力してます。<br />
+   </li>
+  </ol>
+  <p>
+   「L:Tsv」の仕様やモジュール群のドキュメントHTML版は<a href="https://ooblog.github.io/LTsv10kanedit/LTsv_doc.html" title="LTsv10kanedit(tsvtool10)モジュール解説(「LTsv/LTsv_doc.tsv」を「LTsv/LTsv_doc.py」で「docs/LTsv.html」に変換)">https://ooblog.github.io/LTsv10kanedit/LTsv_doc.html</a>。<br />
+   モジュールのLTsv_docドキュメントは「ooblog.github.io」リポジトリの方(<a href="https://github.com/ooblog/ooblog.github.io" title="ooblog/ooblog.github.io: 架空の検索エンジン「約四文字」。">https://github.com/ooblog/ooblog.github.io</a>)に。<br />
+  </p>
+ </section>
+|<＃summary:LTsv>]
+
+
+[<？pagelinks>|
+^404\.html?	<＃links:LTsv>
+^やくよん\.html?	<＃links:LTsv>
+^ぶっくま\.html?	<＃links:LTsv>
+^ふぉんと\.html?	<＃links:LTsv>
+^LTsv\.html?	<＃links:LTsv>
+|<？pagelinks>]
+
+[<＃links:LTsv>|
+ <section>
+  <H2>関連リンク</H2>
+  <dl>
+   <dt><a href="やくよん.html" title="やくよん.html">やくよん</a></dt>
+   <dd>「約四文字(やくよん)」は架空の検索エンジンです。</dd>
+   <dt><a href="ぶっくま.html" title="ぶっくま.html">ぶっくま</a></dt>
+   <dd>「ブックマークレット(ぶっくま)」はブラウザのブックマークで動作する検索ダイアログです。</dd>
+   <dt><a href="ふぉんと.html" title="ふぉんと.html">ふぉんと</a></dt>
+   <dd>「フォントkan5x5comic(ふぉんと)」は「kanfont(LTsv10kanedit)」で作成できるフォントです。</dd>
+   <dt><a href="LTsv.html" title="LTsv.html">LTsv</a></dt>
+   <dd>「LTsv_doc.py(LTsv)」は「kanfont(LTsv10kanedit)」付属のPythonモジュール関数一覧ドキュメント作成ツールです。<br />ついでに「約四文字」のサイトも「LTsv_doc.py」作成。<br /></dd>
+  </dl>
+ </section>
+|<＃links:LTsv>]
+
+[<？ooblog>|
+.+\.html?	# <？Copyright><br />@E# <？LicenseMIT><br />@E# <？https99-9:LTsv10LICENSE><br />@E
+.*	# <？Copyright>@E# <？LicenseMIT>@E# <？https99-9:LTsv10LICENSE>@E
+|<？ooblog>]
+[<？https99-9:LTsv10LICENSE>|
+.+\.html?	<a href="<？url99-9:LTsv10LICENSE>" title="<？title99-9:LTsv10LICENSE>"><？url99-9:LTsv10LICENSE></a>
+.*	<？url99-9:LTsv10LICENSE>
+|<？https99-9:LTsv10LICENSE>]
+[<？url99-9:LTsv10LICENSE>|
+.*	https://github.com/ooblog/LTsv10kanedit/blob/master/LICENSE
+|<？url99-9:LTsv10LICENSE>]
+[<？title99-9:LTsv10LICENSE>|
+.*	LTsv10kanedit/LICENSE at master · ooblog/LTsv10kanedit
+|<？title99-9:LTsv10LICENSE>]
+[<？https99-9:LTsv10repository>|
+.+\.html?	<a href="<？url99-9:LTsv10repository>" title="<？title99-9:LTsv10repository>"><？url99-9:LTsv10repository></a>
+.*	<？url99-9:LTsv10repository>
+|<？https99-9:LTsv10repository>]
+[<？url99-9:LTsv10repository>|
+.*	https://github.com/ooblog/LTsv10kanedit
+|<？url99-9:LTsv10repository>]
+[<？title99-9:LTsv10repository>|
+.*	ooblog/LTsv10kanedit: 「L:Tsv」の読み書きを中心としたモジュール群と漢字入力「kanedit」のPythonによる実装です(準備中)。
+|<？title99-9:LTsv10repository>]
+[<？https99-9:LTsv_doc.py>|
+.+\.html?	<a href="https://github.com/ooblog/LTsv10kanedit/blob/master/LTsv/<？url99-9:LTsv_doc.py>" title="<？title99-9:LTsv_doc.py>"><？url99-9:LTsv_doc.py></a>
+.*	<？url99-9:LTsv_doc.py>
+|<？https99-9:LTsv_doc.py>]
+[<？url99-9:LTsv_doc.py>|
+.*	LTsv_doc.py
+|<？url99-9:LTsv_doc.py>]
+[<？title99-9:LTsv_doc.py>|
+.*	LTsv10kanedit/LTsv_doc.py at master · ooblog/LTsv10kanedit
+|<？title99-9:LTsv_doc.py>]
+
+[<？yakuyon>|
+.*	「約四文字」(http://ooblog.github.io/)
+|<？yakuyon>]
+[<？Copyright>|
+.*	Copyright (c) 2016 ooblog
+|<？Copyright>]
+[<？LicenseMIT>|
+.*	License: MIT
+|<？LicenseMIT>]
+
+[<＃yakuyon_outlist>|
+index.html
+yakuyon.css
+yakuyon.js
+opensearch.xml
+404.html	404
+やくよん.html	やくよん
+ぶっくま.html	ぶっくま
+ふぉんと.html	ふぉんと
+LTsv.html	LTsv
+|<＃yakuyon_outlist>]
+
+
+# Copyright (c) 2016 ooblog
+# License: MIT
+# https://github.com/ooblog/LTsv10kanedit/blob/master/LICENSE
