@@ -9,15 +9,15 @@ modify	20161127U130930
 |L:Tsv]
 
 [LTsv_doc|
-main	<＃yakuyon_main>
+main	<＠yakuyon_main>
 tagseparate	*
 outdir	../../ooblog.github.io/
-outlist	<＃yakuyon_outlist>
+outlist	<＠yakuyon_outlist>
 |LTsv_doc]
 
-[<＃yakuyon_main>|
+[<＠yakuyon_main>|
 <？LTsv_doc_ext>
-|<＃yakuyon_main>]
+|<＠yakuyon_main>]
 
 [<？LTsv_doc_ext>|
 .+\.html?	<＃yakuyon_HTML>
@@ -45,25 +45,23 @@ outlist	<＃yakuyon_outlist>
  </header>
 <？pagesummary>
 <？pagelinks>
- <section>
-  <article>
-   <H1>詮索しない検索エンジン「約四文字」。</H1>
-   <div class="yonmoji">
-    <p class="yonmoji_logo">約四<br />文字</p>
-    <form id="entry" action="" method="get" onsubmit="newword(); return false;">
-     <p><label>page：<input id="page" type="search" name="page" value="" class="yonmoji_entry"></label> <input type="submit" value="約四文字"></p>
-    </form>
-   </div>
-   <noscript>
-    <p>ブラウザのスクリプト設定を有効にすると「約四文字」は作動します。</p>
-   </noscript>
-  </article>
- </section>
+ <article><div>
+  <H1>詮索しない検索エンジン「約四文字」。</H1>
+  <div class="yonmoji">
+   <p class="yonmoji_logo">約四<br />文字</p>
+   <form id="entry" action="" method="get" onsubmit="newword(); return false;">
+    <p><label>page：<input id="page" type="search" name="page" value="" class="yonmoji_entry"></label> <input type="submit" value="約四文字"></p>
+   </form>
+  </div>
+  <noscript>
+   <p>ブラウザのスクリプト設定を有効にすると「約四文字」は作動します。</p>
+  </noscript>
+ </div></article>
 
-<footer>
- <p>site generator "<？https99-9:LTsv_doc.py>" repository：<？https99-9:LTsv10repository></p>
- <p class="ooblog"><？ooblog></p>
-</footer>
+ <footer>
+  <p>site generator "<？https99-9:LTsv_doc.py>" repository：<？https99-9:LTsv10repository></p>
+  <p class="ooblog"><？ooblog></p>
+ </footer>
 </body></html>
 |<＃yakuyon_HTML>]
 
@@ -108,7 +106,7 @@ header{
  yonmoji_both{
    float: both;
  }
-section{
+section,aside,article{
   margin-top: 1rem;
   border: 2px black solid;
   padding: 1rem;
@@ -139,18 +137,11 @@ input.yonmoji_entry:focus{
    float: left;
    margin: 0rem;
  }
-article{
+ article > div{
   margin-top: 0.5rem;
   border: 1px gray solid;
   padding: 1rem;
-}
-aside{
-  border: 1px gray dotted;
-  float: right;
-  width: 12rem;
-  margin-top: 1rem;
-  padding: 1rem;
-}
+ }
 footer{
   margin-top:1rem;
   float: both;
@@ -316,13 +307,13 @@ AAAASUVORK5CYII=
 
 [<？title>|
 ^index\.html?	<？yakuyon>
-.*	<＃yakuyon_outlist> - <？yakuyon>
+.*	<＠yakuyon_outlist> - <？yakuyon>
 |<？title>]
 
 [<？breadcrumbs>|
 ^index\.html?	<？breadcrumbs_404>
-^404\.html?	<span> &#62; <mark><＃yakuyon_outlist></mark></span>
-.*	<span> &#62; <mark><＃yakuyon_outlist></mark></span> <？breadcrumbs_404>
+^404\.html?	<span> &#62; <mark><＠yakuyon_outlist></mark></span>
+.*	<span> &#62; <mark><＠yakuyon_outlist></mark></span> <？breadcrumbs_404>
 |<？breadcrumbs>]
 
 [<？breadcrumbs_404>|
@@ -345,7 +336,7 @@ AAAASUVORK5CYII=
    <br class="yonmoji_both" />
   </div>
   <ol class="yonmoji_ketsushoutentei">
-   <li>「<dfn>(<abbr title="404 Not Found"><＃yakuyon_outlist></abbr>)</dfn>」はページが見つからない事を表すHTTPステータスコードです。</li>
+   <li>「<dfn>(<abbr title="404 Not Found"><＠yakuyon_outlist></abbr>)</dfn>」はページが見つからない事を表すHTTPステータスコードです。</li>
    <li>入力欄に入力した単語のページに移動するはずでした。</li>
    <li>GitHub Pageでは404エラーが発生するとこの「404.html」を表示します。</li>
    <li>単語が思いつかない、その他不具合などの疑いがある場合、<br />入力欄に「やくよん」「ぶっくま」「ふぉんと」と入力してみて動作確認してみてください。</li>
@@ -357,7 +348,7 @@ AAAASUVORK5CYII=
  <section>
   <div class="yonmoji">
    <H2 class="yonmoji_word">やく<br />よん</H2>
-   <H3>「<dfn>約四文字(<abbr title="約四文字"><＃yakuyon_outlist></abbr>)</dfn>」は<br />架空の検索エンジンです。</H3>
+   <H3>「<dfn>約四文字(<abbr title="約四文字"><＠yakuyon_outlist></abbr>)</dfn>」は<br />架空の検索エンジンです。</H3>
    <br class="yonmoji_both" />
   </div>
   <ol class="yonmoji_kiketsushouten">
@@ -378,7 +369,7 @@ AAAASUVORK5CYII=
  <section>
   <div class="yonmoji">
    <H2 class="yonmoji_word">ぶっ<br />くま</H2>
-   <H3>「<dfn>ブックマークレット(<abbr title="ブックマークレット"><＃yakuyon_outlist></abbr>)</dfn>」は<br />ブラウザのブックマークで動作する検索ダイアログです。</H3>
+   <H3>「<dfn>ブックマークレット(<abbr title="ブックマークレット"><＠yakuyon_outlist></abbr>)</dfn>」は<br />ブラウザのブックマークで動作する検索ダイアログです。</H3>
    <br class="yonmoji_both" />
   </div>
   <ol class="yonmoji_kiketsushouten">
@@ -401,7 +392,7 @@ AAAASUVORK5CYII=
  <section>
   <div class="yonmoji">
    <H2 class="yonmoji_word">ふぉ<br />んと</H2>
-   <H3>「<dfn>フォントkan5x5comic(<abbr title="フォントkan5x5comic"><＃yakuyon_outlist></abbr>)</dfn>」は<br />「kanfont(LTsv10kanedit)」で作成できるフォントです。</H3>
+   <H3>「<dfn>フォントkan5x5comic(<abbr title="フォントkan5x5comic"><＠yakuyon_outlist></abbr>)</dfn>」は<br />「kanfont(LTsv10kanedit)」で作成できるフォントです。</H3>
    <br class="yonmoji_both" />
   </div>
   <ol class="yonmoji_‎syllogism">
@@ -428,7 +419,7 @@ AAAASUVORK5CYII=
  <section>
   <div class="yonmoji">
    <H2 class="yonmoji_word">ＬＴ<br />ＳＶ</H2>
-   <H3>「<dfn>「L:Tsv」(<abbr title="「L:Tsv」"><＃yakuyon_outlist></abbr>)</dfn>」は<br />「LTSV」の読み書きを中心としたモジュール群です。</H3>
+   <H3>「<dfn>「L:Tsv」(<abbr title="「L:Tsv」"><＠yakuyon_outlist></abbr>)</dfn>」は<br />「LTSV」の読み書きを中心としたモジュール群です。</H3>
    <br class="yonmoji_both" />
   </div>
   <ol class="yonmoji_johakyu">
@@ -462,7 +453,7 @@ AAAASUVORK5CYII=
 |<？pagelinks>]
 
 [<＃links:LTsv>|
- <section>
+ <aside><nav>
   <H2>関連リンク</H2>
   <dl>
    <dt><a href="やくよん.html" title="やくよん.html">やくよん</a></dt>
@@ -474,7 +465,7 @@ AAAASUVORK5CYII=
    <dt><a href="LTsv.html" title="LTsv.html">LTsv</a></dt>
    <dd>「LTsv_doc.py(LTsv)」は「kanfont(LTsv10kanedit)」付属のPythonモジュール関数一覧ドキュメント作成ツールです。<br />ついでに「約四文字」のサイトも「LTsv_doc.py」作成。<br /></dd>
   </dl>
- </section>
+ </nav></aside>
 |<＃links:LTsv>]
 
 [<？ooblog>|
@@ -522,7 +513,7 @@ AAAASUVORK5CYII=
 .*	License: MIT
 |<？LicenseMIT>]
 
-[<＃yakuyon_outlist>|
+[<＠yakuyon_outlist>|
 index.html
 yakuyon.css
 yakuyon.js
@@ -532,7 +523,7 @@ opensearch.xml
 ぶっくま.html	ぶっくま
 ふぉんと.html	ふぉんと
 LTsv.html	LTsv
-|<＃yakuyon_outlist>]
+|<＠yakuyon_outlist>]
 
 
 # Copyright (c) 2016 ooblog
