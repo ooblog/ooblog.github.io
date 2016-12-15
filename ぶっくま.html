@@ -25,13 +25,13 @@
    <li>テキストを選択した状態で検索ダイアログを開くと選択テキストが最初から代入されます。<br />ダイアログ内で入力変更も可能です。</li>
    <li>OKボタンで、ダイアログに入力したページ名でページが表示されるはずです。</li>
    <li>
-    実は「<a href="javascript:(function(){%20var%20d=document;var%20s=d.selection?d.selection.createRange().text:d.getSelection();%20var%20t=prompt('page%EF%BC%9A['+s+']%E7%B4%84%E5%9B%9B%E6%96%87%E5%AD%97',s);%20if(t.length>0){var%20regExp=new%20RegExp('[/|\\|:|*|?|<|>|\|]','g');t=t.replace(regExp,'');window.open('<?sitename?>'+t+'.html');}%20})();" title="「約四文字」検索ダイアログ(ブックマークレット)">「約四文字」検索ダイアログ</a>」をブックマークに登録するよりも、<br />
-    ブラウザ右上の検索バーから「<a href="<?sitename?>opensearch.xml" title="<?sitename?>opensearch.xml">opensearch.xml</a>」を登録するといわゆる「検索プロバイダー」っぽく、<br />
-    URL「https://<?sitename?>?page=<!pagename!>」を発行させてより検索っぽい挙動に寄せる事も可能です。<br />
+    実は「<a href="javascript:(function(){%20var%20d=document;var%20s=d.selection?d.selection.createRange().text:d.getSelection();%20var%20t=prompt('page%EF%BC%9A['+s+']%E7%B4%84%E5%9B%9B%E6%96%87%E5%AD%97',s);%20if(t.length>0){var%20regExp=new%20RegExp('[/|\\|:|*|?|<|>|\|]','g');t=t.replace(regExp,'');window.open('<?sitename?>'+t+'.html');}%20})();" title="「約四文字」検索ダイアログ(ブックマークレット)">「約四文字」検索ダイアログ(ブックマークレット)</a>」をブックマークに登録するよりも、<br />
+    ブラウザ右上の検索バーから「<a href="https://ooblog.github.io/opensearch.xml" title="<?sitename?>opensearch.xml">opensearch.xml</a>」を登録するといわゆる「検索プロバイダー」っぽく、<br />
+    「https://ooblog.github.io/?page=ぶっくま」クエリーを擬似的に発行させてより検索っぽい挙動に寄せる事も可能です。<br />
    </li>
    </ol>
   <p>
-   「/?page=<!pagename!>」といったクエリーは「<a href="https://pages.github.com/" title="GitHub Pages - Websites for you and your projects.">GitHub Pages</a>」で動きません。JavaScriptでそれっぽく見せてるだけなので注意。<br />
+   「/?page=ぶっくま」といったクエリーは「<a href="https://pages.github.com/" title="GitHub Pages - Websites for you and your projects.">GitHub Pages</a>」で動きません。JavaScriptでそれっぽく見せてるだけなので注意。<br />
   </p>
  </section>
 
