@@ -63,15 +63,14 @@ target/
 
 
 # git status
-# git push github:ooblog/ooblog.github.io.git master
+# git push github:ooblog/ooblog.github.io.git 20161216F022601
 # git push github:ooblog/ooblog.github.io.git branch
 # git log
 # git ls-files
 # git commit -a -m ""
 # git branch
-# git checkout master
+# git checkout 20161216F022601
 # git merge branch
 # git branch -d branch
 # git push github:ooblog/ooblog.github.io.git :branch
-blog_hatena/
 test.*

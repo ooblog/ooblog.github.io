@@ -59,7 +59,7 @@ outlist	<＠yakuyon_outlist>
  </div></article>
 
  <footer>
-  <p>site generator "<？https99-9:LTsv_doc.py>" repository：<？https99-9:LTsv10repository></p>
+  <p>site generator "<？https/ooblog:LTsv_doc.py>" repository：<？https/ooblog:LTsv10repository></p>
   <p class="ooblog"><？ooblog></p>
  </footer>
 </body></html>
@@ -482,7 +482,7 @@ AAAASUVORK5CYII=
    <li>
     モジュールの関数増減を管理するためドキュメント作成ツールも作りました。<br />
     そのままサイトジェネレーターに流用できる事に気が付いたので<？yakuyon>も<br />
-    「<？https99-9:LTsv10repository>」の「<？https99-9:LTsv_doc.py>」を使って出力してます。<br />
+    「<？https/ooblog:LTsv10repository>」の「<？https/ooblog:LTsv_doc.py>」を使って出力してます。<br />
    </li>
   </ol>
   <p>
@@ -517,40 +517,126 @@ AAAASUVORK5CYII=
  </nav></aside>
 |<＃links:LTsv>]
 
+[<？https/License:LICENSE>*<？https/kanmap.tsv>*<？https/kanchar.tsv>*<？https/kanword.tsv>*<？https/License:wine_sh>|
+:<＄path/License-0>	LICENSE
+:<＄path/License-1>	LTsv/kanmap.tsv
+:<＄path/License-2>	LTsv/kanchar.tsv
+:<＄path/License-3>	kanword.tsv
+:<＄path/License-4>	wine_sh
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/License-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/License-@c>"><＄path/License-@c></a>
+.*	<＄path/License-@c>
+|<？https/License:LICENSE>*<？https/kanmap.tsv>*<？https/kanchar.tsv>*<？https/kanword.tsv>*<？https/License:wine_sh>]
+
+[<？https/License:kan5x5comic.woff>*<？https/License:yakuyon>|
+:<＄word/Python-0>	kan5x5comic.woff
+:<＄link/Python-0>	https://ooblog.github.io/kan5x5comic.woff
+:<＄word/Python-1>	約四文字
+:<＄link/Python-1>	https://ooblog.github.io/
+.+\.html?	<a href="<＄link/License-@c>" title="<＄word/License-@c>"><＄word/License-@c></a>
+.+\.css	<＄link/License-@c>
+.*	<＄word/License-@c>
+|<？https/License:kan5x5comic.woff>*<？https/License:yakuyon>]
+
+[<？https/LTsv_printf.py>|
+:<＄path/LTsv_printf-0>	LTsv/LTsv_printf.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_printf-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_printf-@c>"><＄path/LTsv_printf-@c></a>
+.*	<＄path/LTsv_printf-@c>
+|<？https/LTsv_printf.py>]
+
+[<？https/LTsv_file.py>|
+:<＄path/LTsv_file-0>	LTsv/LTsv_file.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_file-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_file-@c>"><＄path/LTsv_file-@c></a>
+.*	<＄path/LTsv_file-@c>
+
+[<？https/LTsv_time.py>|
+:<＄path/LTsv_time-0>	LTsv/LTsv_time.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_time-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_time-@c>"><＄path/LTsv_time-@c></a>
+.*	<＄path/LTsv_time-@c>
+|<？https/LTsv_time.py>]
+
+[<？https/LTsv_calc.py>|
+:<＄path/LTsv_calc-0>	LTsv/LTsv_calc.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_calc-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_calc-@c>"><＄path/LTsv_calc-@c></a>
+.*	<＄path/LTsv_calc-@c>
+
+[<？https/LTsv_joy.py>*<？https/LTsv_joy.tsv>|
+:<＄path/LTsv_joy-0>	LTsv/LTsv_joy.py
+:<＄path/LTsv_joy-1>	LTsv/LTsv_joy.tsv
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_joy-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_joy-@c>"><＄path/LTsv_joy-@c></a>
+.*	<＄path/LTsv_joy-@c>
+|<？https/LTsv_joy.py>*<？https/LTsv_joy.tsv>]
+
+[<？https/LTsv_kbd.py>*<？https/LTsv_kbd.tsv>|
+:<＄path/LTsv_kbd-0>	LTsv/LTsv_kbd.py
+:<＄path/LTsv_kbd-1>	LTsv/LTsv_kbd.tsv
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_kbd-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_kbd-@c>"><＄path/LTsv_kbd-@c></a>
+.*	<＄path/LTsv_kbd-@c>
+|<？https/LTsv_kbd.py>*<？https/LTsv_kbd.tsv>]
+
+[<？https/LTsv_gui.py>|
+:<＄path/LTsv_gui-0>	LTsv/LTsv_gui.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_gui-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_gui-@c>"><＄path/LTsv_gui-@c></a>
+.*	<＄path/LTsv_gui-@c>
+|<？https/LTsv_gui.py>]
+
+[<？https/LTsv_glyph.py>*<？https/LTsv_glyph.tsv>*<？https/kanzip.py>|
+:<＄path/LTsv_glyph-0>	LTsv/LTsv_glyph.py
+:<＄path/LTsv_glyph-1>	LTsv/LTsv_glyph.tsv
+:<＄path/LTsv_glyph-2>	LTsv/kanzip.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_glyph-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_glyph-@c>"><＄path/LTsv_glyph-@c></a>
+.*	<＄path/LTsv_glyph-@c>
+|<？https/LTsv_glyph.py>*<？https/LTsv_glyph.tsv>*<？https/kanzip.py>]
+
+[<？https/python3install.sh>*<？https/kanmap.py>|
+:<＄path/LTsv10_faq-0>	wine_sh/python3install.sh
+:<＄path/LTsv10_faq-1>	kanmap.py
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv10_faq-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv10_faq-@c>"><＄path/LTsv10_faq-@c></a>
+.*	<＄path/LTsv10_faq-@c>
+|<？https/python3install.sh>*<？https/kanmap.py>]
+
+[<？https/LTsv_doc.py>*<？https/LTsv_doc.tsv>*<？https/kanedit_etc.tsv>|
+:<＄path/LTsv_doc-0>	LTsv/LTsv_doc.py
+:<＄path/LTsv_doc-1>	LTsv/LTsv_doc.tsv
+:<＄path/LTsv_doc-2>	docs/kanedit_etc.tsv
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_doc-@c>" title="<？url/ooblog:LTsv10repository>/blob/master/<＄path/LTsv_doc-@c>"><＄path/LTsv_doc-@c></a>
+.*	<＄path/LTsv_doc-@c>
+|<？https/LTsv_doc.py>*<？https/LTsv_doc.tsv>*<？https/kanedit_etc.tsv>]
+
+
 [<？ooblog>|
-.+\.html?	# <？Copyright><br />@E# <？LicenseMIT><br />@E# <？https99-9:LTsv10LICENSE><br />@E
-.*	# <？Copyright>@E# <？LicenseMIT>@E# <？https99-9:LTsv10LICENSE>@E
+.+\.html?	# <？Copyright><br />@E# <？LicenseMIT><br />@E# <？https/ooblog:LTsv10LICENSE><br />@E
+.*	# <？Copyright>@E# <？LicenseMIT>@E# <？https/ooblog:LTsv10LICENSE>@E
 |<？ooblog>]
-[<？https99-9:LTsv10LICENSE>|
-.+\.html?	<a href="<？url99-9:LTsv10LICENSE>" title="<？title99-9:LTsv10LICENSE>"><？url99-9:LTsv10LICENSE></a>
-.*	<？url99-9:LTsv10LICENSE>
-|<？https99-9:LTsv10LICENSE>]
-[<？url99-9:LTsv10LICENSE>|
+[<？https/ooblog:LTsv10LICENSE>|
+.+\.html?	<a href="<？url/ooblog:LTsv10LICENSE>" title="<？title/ooblog:LTsv10LICENSE>"><？url/ooblog:LTsv10LICENSE></a>
+.*	<？url/ooblog:LTsv10LICENSE>
+|<？https/ooblog:LTsv10LICENSE>]
+[<？url/ooblog:LTsv10LICENSE>|
 .*	https://github.com/ooblog/LTsv10kanedit/blob/master/LICENSE
-|<？url99-9:LTsv10LICENSE>]
-[<？title99-9:LTsv10LICENSE>|
+|<？url/ooblog:LTsv10LICENSE>]
+[<？title/ooblog:LTsv10LICENSE>|
 .*	LTsv10kanedit/LICENSE at master · ooblog/LTsv10kanedit
-|<？title99-9:LTsv10LICENSE>]
-[<？https99-9:LTsv10repository>|
-.+\.html?	<a href="<？url99-9:LTsv10repository>" title="<？title99-9:LTsv10repository>"><？url99-9:LTsv10repository></a>
-.*	<？url99-9:LTsv10repository>
-|<？https99-9:LTsv10repository>]
-[<？url99-9:LTsv10repository>|
+|<？title/ooblog:LTsv10LICENSE>]
+[<？https/ooblog:LTsv10repository>|
+.+\.html?	<a href="<？url/ooblog:LTsv10repository>" title="<？title/ooblog:LTsv10repository>"><？url/ooblog:LTsv10repository></a>
+.*	<？url/ooblog:LTsv10repository>
+|<？https/ooblog:LTsv10repository>]
+[<？url/ooblog:LTsv10repository>|
 .*	https://github.com/ooblog/LTsv10kanedit
-|<？url99-9:LTsv10repository>]
-[<？title99-9:LTsv10repository>|
+|<？url/ooblog:LTsv10repository>]
+[<？title/ooblog:LTsv10repository>|
 .*	ooblog/LTsv10kanedit: 「L:Tsv」の読み書きを中心としたモジュール群と漢字入力「kanedit」のPythonによる実装です(準備中)。
-|<？title99-9:LTsv10repository>]
-[<？https99-9:LTsv_doc.py>|
-.+\.html?	<a href="https://github.com/ooblog/LTsv10kanedit/blob/master/LTsv/<？url99-9:LTsv_doc.py>" title="<？title99-9:LTsv_doc.py>"><？url99-9:LTsv_doc.py></a>
-.*	<？url99-9:LTsv_doc.py>
-|<？https99-9:LTsv_doc.py>]
-[<？url99-9:LTsv_doc.py>|
+|<？title/ooblog:LTsv10repository>]
+[<？https/ooblog:LTsv_doc.py>|
+.+\.html?	<a href="https://github.com/ooblog/LTsv10kanedit/blob/master/LTsv/<？url/ooblog:LTsv_doc.py>" title="<？title/ooblog:LTsv_doc.py>"><？url/ooblog:LTsv_doc.py></a>
+.*	<？url/ooblog:LTsv_doc.py>
+|<？https/ooblog:LTsv_doc.py>]
+[<？url/ooblog:LTsv_doc.py>|
 .*	LTsv_doc.py
-|<？url99-9:LTsv_doc.py>]
-[<？title99-9:LTsv_doc.py>|
+|<？url/ooblog:LTsv_doc.py>]
+[<？title/ooblog:LTsv_doc.py>|
 .*	LTsv10kanedit/LTsv_doc.py at master · ooblog/LTsv10kanedit
-|<？title99-9:LTsv_doc.py>]
+|<？title/ooblog:LTsv_doc.py>]
 
 [<？yakuyon>|
 .*	「約四文字」(http://ooblog.github.io/)
