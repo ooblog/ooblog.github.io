@@ -3,13 +3,261 @@ TSF_Tab-Separated-Forth:
 	../../ooblog.github.io/yakuyon.tsf	../TSF2KEV/sample/TSFdoc.tsf	2	#TSF_runagainN	#TSF_fin.
 TSFdocs_files:
 	../../ooblog.github.io/test.html
+	../../ooblog.github.io/test.404.html
+	../../ooblog.github.io/test.やくよん.html
+	../../ooblog.github.io/test.ぶっくま.html
+	../../ooblog.github.io/test.ふぉんと.html
+	../../ooblog.github.io/test.LTsv.html
+	../../ooblog.github.io/test.TSV.html
 TSFdocs_basedocs:
-	index_html:
+	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:
 index_html:
-	{?TSFhtmlheader}{?TSFbodyheader}{?TSFasidenav}{?TSFsections}{?TSFbodyfooter}{?TSFhtmlfooter}
+	{?TSFhtmlheader}{?TSFbodyheader}{?TSFasidenav}{?TSFsummaries}{?TSFlinks}{?TSFbodyfooter}{?TSFhtmlfooter}
 TSFdocs_tags:
-	{?/CODE}	{?CODE}
+	{?TAB}	{?NL}	{?/CODE}	{?CODE}
+	{?TSFsummaries_ふぉんと_サンプル文字列}
+	{?breadcrumbs_hashes}	{$breadcrumbs_index}	{?breadcrumbs}	{?TITLE}
+	{?TSFhtmlheader}	{?TSFbodyheader}	{?TSFasidenav}	{?TSFsummaries}	{?TSFlinks}	{?TSFbacktop}	{?TSFbodyfooter}	{?TSFhtmlfooter}
+{?TSFhtmlheader}
+	{$TSFhtmlheader}
+{$TSFhtmlheader}
+	<html lang="ja"><head>
+	 <meta charset="UTF-8">
+	 <title>{?TITLE}</title>
+	 <link rel="stylesheet" type="text/css" href="yakuyon.css">
+	 <link rel="icon" type="image/png" href="favicon.png">
+	 <link rel="search" type="application/opensearchdescription+xml" href="https://ooblog.github.io/opensearch.xml" title="「約四文字」">
+	 <script src="yakuyon.js"></script>
+	</head><body>
+	 <header><nav>
+	  <div class="yonmoji_root"><a href="https://ooblog.github.io/" rel="publisher" title="https://ooblog.github.io/">約四<br></a><a href="https://ooblog.github.io/" rel="publisher" title="https://ooblog.github.io/">文字</a></div>
+	  {?breadcrumbs}
+	  <br class="yonmoji_both">
+	 </nav></header>
+{?breadcrumbs}
+	{$breadcrumbs_index}	{$breadcrumbs_404}	{$breadcrumbs_other}
+{$breadcrumbs_index}
+	<span class="yonmoji_sitemap"><a href="404.html" title="https://ooblog.github.io/404.html">sitemap(404)</a></span>
+{$breadcrumbs_404}
+	<span> &#62; <mark>{?breadcrumbs_hashes}</mark></span>
+{$breadcrumbs_other}
+	<span> &#62; <mark>{?breadcrumbs_hashes}</mark></span> {$breadcrumbs_index}
+{?breadcrumbs_hashes}
+	index	404	やくよん	ぶっくま	ふぉんと	LTsv	TSV
+{?TSFsummaries}
+	{$TSFsummaries_index}
+	{$TSFsummaries_404}
+	{$TSFsummaries_やくよん}
+	{$TSFsummaries_ぶっくま}
+	{$TSFsummaries_ふぉんと}
+	{$TSFsummaries_LTsv}
+	{$TSFsummaries_TSV}
+{$TSFsummaries_index}
+{$TSFsummaries_404}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">４０<br>　４</H2>
+	   <H3>404 Not Found。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_ketsushoutentei">
+	   <li>「<dfn>(<abbr title="404 Not Found">{?breadcrumbs_hashes}</abbr>)</dfn>」はページが見つからない事を表すHTTPステータスコードです。</li>
+	   <li>入力欄に入力した単語のページに移動するはずでした。</li>
+	   <li>GitHub Pageでは404エラーが発生するとこの「404.html」を表示します。</li>
+	   <li>単語が思いつかない、その他不具合などの疑いがある場合、<br>入力欄に「やくよん」「ぶっくま」「ふぉんと」と入力してみて動作確認してみてください。</li>
+	  </ol>
+	 </section>
+{$TSFsummaries_やくよん}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">やく<br>よん</H2>
+	   <H3>「<dfn>約四文字(<abbr title="約四文字">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>架空の検索エンジンです。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_kiketsushouten">
+	   <li>よくアニメとかドラマとかでググる(検索する)時Google先生の代わりに架空の検索エンジン出てくる。</li>
+	   <li>逆に架空の検索エンジンを作ってしまうのはどうだろうと思いついた(自作の小説用途などに便利)。</li>
+	   <li>架空の検索エンジンだけどURLが存在していれば便乗フィッシングサイトから読者を守れる。</li>
+	   <li>フィッシングとは違うけど名前の衝突、<br>
+	    例えばRSSなどフィード規格の方の「<a href="https://www.intertwingly.net/wiki/pie/Rss20AndAtom10Compared" title="Rss20AndAtom10Compared - Atom Wiki">Atom</a>」を「<a href="https://www.google.com/search?q=Atom" title="Atom - Google 検索">Atom</a>」でググってもテキストエディタの「<a href="https://atom.io/" title="Atom A hackable text editor">Atom</a>」出てくる感。<br>
+	   </li>
+	  </ol>
+	  <p>
+	   当初はフォント(グリフ)「<a href="ふぉんと.html" title="kan5x5comic(ふぉんと)">kan5x5comic.woff(ふぉんと)</a>」を表示テストする簡易サイトを作るつもりだったけど、おまけの検索風の何かが本体に。<br>
+	  </p>
+	 </section>
+{$TSFsummaries_ぶっくま}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">ぶっ<br>くま</H2>
+	   <H3>「<dfn>ブックマークレット(<abbr title="ブックマークレット">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>ブラウザのブックマークで動作する検索ダイアログです。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_kiketsushouten">
+	   <li>ブラウザの「ブックマーク」にJavaScriptを登録して使用できる検索ダイアログです。</li>
+	   <li>テキストを選択した状態で検索ダイアログを開くと選択テキストが最初から代入されます。<br>ダイアログ内で入力変更も可能です。</li>
+	   <li>OKボタンで、ダイアログに入力したページ名でページが表示されるはずです。</li>
+	   <li>
+	    実は「<a href="javascript:(function(){%20var%20d=document;var%20s=d.selection?d.selection.createRange().text:d.getSelection();%20var%20t=prompt('page%EF%BC%9A['+s+']%E7%B4%84%E5%9B%9B%E6%96%87%E5%AD%97',s);%20if(t.length>0){var%20regExp=new%20RegExp('[/|\\|:|*|?|<|>|\|]','g');t=t.replace(regExp,'');window.open('<?sitename?>'+t+'.html');}%20})();" title="「約四文字」検索ダイアログ(ブックマークレット)">「約四文字」検索ダイアログ(ブックマークレット)</a>」をブックマークに登録するよりも、<br>
+	    ブラウザ右上の検索バーから「<a href="https://ooblog.github.io/opensearch.xml" title="<?sitename?>opensearch.xml">opensearch.xml</a>」を登録するといわゆる「検索プロバイダー」っぽく、<br>
+	    「https://ooblog.github.io/?page=ぶっくま」クエリーを擬似的に発行させてより検索っぽい挙動に寄せる事も可能です。<br>
+	   </li>
+	   </ol>
+	  <p>
+	   「/?page=ぶっくま」といったクエリーは「<a href="https://pages.github.com/" title="GitHub Pages - Websites for you and your projects.">GitHub Pages</a>」で動きません。JavaScriptでそれっぽく見せてるだけなので注意。<br>
+	  </p>
+	 </section>
+{$TSFsummaries_ふぉんと}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">ふぉ<br>んと</H2>
+	   <H3>「<dfn>フォントkan5x5comic(<abbr title="フォントkan5x5comic">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>「kanfont(LTsv10kanedit)」で作成できるフォントです。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_ketsushoutentei">
+	   <li>
+	    ここ「約四文字」のサイトロゴにも使ってる「kan5x5comic」フォント(グリフ)です。<br>
+	    グリフ「活:kan5x5」とグリフ「漫:kan5x5comic」を混ぜてるのでアンチゴチフォントに近いです。<br>
+	    「<a href="https://github.com/ooblog/LTsv10kanedit/kanfont.py" title="ooblog/LTsv10kanedit">kanfont</a>」はグリフデータ直接フォントファイルが生成できないので、OS毎にコンバータを用意する必要があります。<br>
+	   </li>
+	   <li>
+	    「Linux」環境では「<a href="http://fontforge.github.io/ja/" title="FontForge ">FontForge</a>」を用意します。<br>
+	    「<a href="https://github.com/ooblog/LTsv10kanedit/kanfont.py" title="ooblog/LTsv10kanedit">kanfont</a>」で「kan5x5.svg」を保存して「kan5x5comic.ttf」に変換します。
+	   </li>
+	   <li>
+	    「Windows」環境では「<a href="http://fontforge.github.io/ja/" title="FontForge ">FontForge</a>」が動くか不明なので「<a href="http://opentype.jp/woffconv.htm" title="WOFFコンバータ">WOFFコンバータ</a>」を用意します。<br>
+	    後述の「kan5x5comic.woff」をダウンロードして「kan5x5comic.ttf」に変換します。
+	   </li>
+	   <li>
+	    「<a href="https://github.com/ooblog/LTsv10kanedit/kanfont.py" title="ooblog/LTsv10kanedit">kanfont</a>」によるグリフ自体の作成編集方法は「<a href="https://ooblog.github.io/LTsv10kanedit/kanfont.html" title="「kanfont」は「LTsv10kanedit(tsvtool10)」を用いたフォントエディタ(グリフエディタ)です。"><img src="https://ooblog.github.io/LTsv10kanedit/kanfont_logo.png" alt="kanfont" title="kanfont" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/kanfont.html</a>」を参考。<br>
+	    フォントが対応してるグリフ一覧みたいなものは「<a href="https://ooblog.github.io/LTsv10kanedit/kanmap.html" title="「kanmap」は「LTsv10kanedit(tsvtool10)」を用いたグリフ進捗ビュアーです。"><img src="https://ooblog.github.io/LTsv10kanedit/kanmap_logo.png" alt="kanmap" title="kanmap" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/kanmap.html</a>」を参考。<br> 
+	   </li>
+	  </ol>
+	  <p>
+	   フォント「kan5x5comic」のライセンスも「<a href="https://github.com/ooblog/LTsv10kanedit/kanfont.py" title="ooblog/LTsv10kanedit">kanfont.py</a>」を含む「<a href="https://ooblog.github.io/LTsv10kanedit/"><img src="https://ooblog.github.io/LTsv10kanedit/LTsv10_logo.png" alt="LTsv10kanedit(tsvtool10)" title="LTsv10kanedit(tsvtool10)" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/</a>」にとりあえず準拠。<br>
+	   「kan5x5comic」の開発環境はいずれ「<a href="TSV.html" title="TSV.html">TSV</a>」に置き換える予定。<br>
+	  </p>
+	 </section>
+	 <section>
+	  <H2 class="kan5x5comic">「kan5x5comic.woff」のダウンロード。</H2>
+	  <p class="kan5x5comic">
+	   『<a href="https://ooblog.github.io/kan5x5comic.woff" title="kan5x5comic.woff">kan5x5comic.woff</a>(size:今のところ約 49KB)』<br>
+	   いわゆる「漫」グリフ。ひらがなカタカナアルファベッド類をドット絵5x5をベースにアレンジ。<br>
+	  </p>
+	   <pre><code class="kan5x5comic">{?TSFsummaries_ふぉんと_サンプル文字列}</code></pre>
+	  <H2 class="kan5x5">「kan5x5.woff」のダウンロード。</H2>
+	  <p class="kan5x5">
+	   『<a href="https://ooblog.github.io/kan5x5.woff" title="kan5x5.woff">kan5x5.woff</a>(size:今のところ約 38KB)』<br>
+	   いわゆる「活」グリフ。ドット絵5x5フォントというコンセプト。<br>
+	   <pre><code class="kan5x5">{?TSFsummaries_ふぉんと_サンプル文字列}</code></pre>
+	  </p>
+	  <p>
+	   一部絵文字等で「筆」グリフが混入するかもだけど注意。「筆」グリフは「kanfont」の仕様上に存在しますが、一部絵文字に用いられるのみです。<br>
+	  あと漢字が不足。「漫」グリフの漢字が無いのは仕様です。<br>
+	  </p>
+	 </section>
+{?TSFsummaries_ふぉんと_サンプル文字列}
+	{$TSFsummaries_ふぉんと_サンプル文字列}
+{$TSFsummaries_ふぉんと_サンプル文字列}
+	平仮名{?TAB}ぬふあうえおやゆよわほへたていすかんなにらせ沼濡ちとしはきくまのりれけむつさそひこみもねるめろ
+	{?TAB}ゔぶぁぅぇぉゃゅょをぼべだでぃずがゎゐっゑぜ゛゜ぢどじばぎぐぱ…「」げぷづざぞびごぴぽ、。ぺ〜
+	片仮名{?TAB}ヌフアウエオヤユヨワホヘタテイスカンナニラセ糠鵺チトシハキクマノリレケムツサソヒコミモネルメロ
+	{?TAB}ヴブァゥェォャュョヲボベダディズガヮヰッヱゼ゛゜ヂドジバギグパ・『』ゲプヅザゾビゴピポ、。ペーヵヶ
+	ABC{?TAB}1234567890-^qwertyuiop@[asdfghjkl;:]zxcvbnm,./\¥
+	{?TAB}!"#$%&'()~=|QWERTYUIOP`{ASDFGHJKL+*}ZXCVBNM<>?_ 
+	ＡＢＣ{?TAB}１２３４５６７８９０－＾ｑｗｅｒｔｙｕｉｏｐ＠［ａｓｄｆｇｈｊｋｌ；：］ｚｘｃｖｂｎｍ，．／＼￥
+	{?TAB}！＂＃＄％＆’（）～＝｜ＱＷＥＲＴＹＵＩＯＰ｀｛ＡＳＤＦＧＨＪＫＬ＋＊｝ＺＸＣＶＢＮＭ＜＞？＿　
+	麻雀牌{?TAB}🀀🀁🀂🀃🀄🀅🀆🀇🀈🀉🀊🀋🀌🀍🀎🀏🀐🀑🀒🀓🀔🀕🀖🀗🀘🀙🀚🀛🀜🀝🀞🀟🀠🀡🀢🀣🀤🀥🀦🀧🀨🀩🀪🀫⚀⚁⚂⚃⚄⚅
+	記号{?TAB}「名〜⇔波ダッシュ」「名～⇔チルダ(全角)」「名∼⇔ランダウの記号」
+{$TSFsummaries_LTsv}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">ＬＴ<br>ＳＶ</H2>
+	   <H3>「<dfn>「L:Tsv」(<abbr title="「L:Tsv」">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>「LTSV」の読み書きを中心としたモジュール群です。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_kiketsu">
+	   <li>
+	    「L:Tsv」は基本的には<a href="http://ltsv.org/" title="Labeled Tab-separated Values (LTSV)">LTSV</a>ファイルを読み書きするPythonモジュールです(「L:Tsv」は「LTSV」を勝手に独自に拡張しています)。<br>
+	    2系3系の差分を吸収したり、GTKやTkinterの差分吸収も試みたり雑多なモジュールと化してます。<br>
+	    フォントエディタ(グリフエディタ)や漢直(漢字直接入力)やドキュメント作成ツールなども付属しています。<br>
+	   </li>
+	   <li>
+	    フォントエディタ(グリフエディタ)や漢直(漢字直接入力)の開発主体は「<a href="TSV.html" title="TSV.html">TSV</a>」に置き換える予定。<br>
+	    既にドキュメント作成ツールは「<a href="https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf" title="TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV">TSFdoc.tsf</a>」に置き換わってます。<br>
+	   </li>
+	  </ol>
+	  <p>
+	   「L:Tsv」の仕様やモジュール群および「kanedit」などのHTML版ドキュメントは<br>
+	   「<a href="https://ooblog.github.io/LTsv10kanedit/" title="LTsv10kanedit(tsvtool10)モジュール解説(「LTsv/LTsv_doc.tsv」を「LTsv/LTsv_doc.py」で「docs/LTsv.html」に変換)"><img src="https://ooblog.github.io/LTsv10kanedit/LTsv10_logo.png" alt="LTsv10kanedit(tsvtool10)" title="LTsv10kanedit(tsvtool10)" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/</a>」を参考。<br>
+	  </p>
+	 </section>
+{$TSFsummaries_TSV}
+{?TSFlinks}
+	{$TSFlinks_index}
+	{$TSFlinks_404}
+	{$TSFlinks_404}
+	{$TSFlinks_404}
+	{$TSFlinks_404}
+	{$TSFlinks_404}
+	{$TSFlinks_404}
+{$TSFlinks_index}
+{$TSFlinks_404}
+	 <aside><nav>
+	  <H2>関連リンク</H2>
+	  <dl>
+	   <dt><a href="やくよん.html" title="やくよん.html">やくよん</a></dt>
+	   <dd>「約四文字(やくよん)」は架空の検索エンジンです。</dd>
+	   <dt><a href="ぶっくま.html" title="ぶっくま.html">ぶっくま</a></dt>
+	   <dd>「ブックマークレット(ぶっくま)」はブラウザのブックマークで動作する検索ダイアログです。</dd>
+	   <dt><a href="ふぉんと.html" title="ふぉんと.html">ふぉんと</a></dt>
+	   <dd>「フォントkan5x5comic(ふぉんと)」は「kanfont(LTsv10kanedit)」で作成できるフォントです。</dd>
+	   <dt><a href="LTsv.html" title="LTsv.html">LTsv</a></dt>
+	   <dd>「L:Tsv(LTsv)」はTSVの前身となるデータフォーマット「L:Tsv」と関連Pythonモジュールです。<br></dd>
+	   <dt><a href="TSV.html" title="TSV.html">TSV</a></dt>
+	   <dd>「TSV(TSV)」はプログラミング言語「TSF_Tab-Separated-Forth」です(D言語とPyhtonで実装)。<br>このサイト「約四文字」もTSV付属の「<a href="https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf" title="TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV">TSFdoc.tsf</a>」で更新。<br></dd>
+	  </dl>
+	 </nav></aside>
+{?TSFbodyfooter}
+	{$TSFbodyfooter}
+{$TSFbodyfooter}
+	 <article><div>
+	  <H1>詮索しない検索エンジン「約四文字」。</H1>
+	  <div class="yonmoji">
+	   <p class="yonmoji_logo">約四<br>文字</p>
+	   <form id="entry" action="" method="get" onsubmit="newword(); return false;">
+	    <p><label>page：<input id="page" type="search" name="page" value="" class="yonmoji_entry"></label> <input type="submit" value="約四文字"></p>
+	   </form>
+	  </div>
+	  <noscript>
+	   <p>ブラウザのスクリプト設定を有効にすると「約四文字」は作動します。</p>
+	  </noscript>
+	 </div></article>
+	{?TSFbacktop}
+	<footer>
+	 <p>site generator "<a href="https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf" title="TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV">TSFdoc.tsf</a>" repository：<a href="https://github.com/ooblog/TSF2KEV" title="ooblog/TSF2KEV: プログラミング言語「TSF_Tab-Separated-Forth」開発中。">https://github.com/ooblog/TSF2KEV</a></p>
+	 <p class="ooblog">
+	  #! -- Copyright (c) 2017 ooblog --<br>
+	  #! License: MIT　<a href="https://github.com/ooblog/TSF2KEV/blob/master/LICENSE" title="TSF2KEV/LICENSE at master · ooblog/TSF2KEV">https://github.com/ooblog/TSF2KEV/blob/master/LICENSE</a><br>
+	 </p>
+	</footer>
+{?TSFhtmlfooter}
+	{$TSFhtmlfooter}
+{$TSFhtmlfooter}
+	
+	</body></html>
+{?TSFbacktop}
+		<div class="gotop"><a href="#top">↑Top</a></div>
+{?TITLE}
+	「約四文字」(http://ooblog.github.io/)	{?breadcrumbs_hashes} 「約四文字」(http://ooblog.github.io/)
 {?CODE}
 	<pre><code>
 {?/CODE}
 	</code></pre>
+{?TAB}
+	@T
+{?NL}
+	@E
+
+#! -- Copyright (c) 2017 ooblog --
+#! License: MIT　https://github.com/ooblog/TSF2KEV/blob/master/LICENSE
