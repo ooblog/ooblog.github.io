@@ -62,16 +62,17 @@ target/
 .ipynb_checkpoints
 
 
+# git clone github:ooblog/TSF2KEV.git
 # git status
-# git push github:ooblog/ooblog.github.io.git master
-# git push github:ooblog/ooblog.github.io.git 20161216F022601
+# git push github:ooblog/TSF2KEV.git master
+# git push github:ooblog/TSF2KEV.git 20170612M142102
 # git log
 # git ls-files
 # git commit -a -m ""
+# git reset --soft HEAD^
 # git branch
 # git checkout master
-# git checkout 20161216F022601
-# git merge 20161216F022601
-# git branch -d 20161216F022601
-# git push github:ooblog/ooblog.github.io.git :20161216F022601
+# git checkout 20170612M142102
+# git merge 20170612M142102
+# git branch -d 20170612M142102
 test.*

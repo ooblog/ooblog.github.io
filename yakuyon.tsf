@@ -1,0 +1,15 @@
+#! /usr/bin/env TSF
+TSF_Tab-Separated-Forth:
+	../../ooblog.github.io/yakuyon.tsf	../TSF2KEV/sample/TSFdoc.tsf	2	#TSF_runagainN	#TSF_fin.
+TSFdocs_files:
+	../../ooblog.github.io/test.html
+TSFdocs_basedocs:
+	index_html:
+index_html:
+	{?TSFhtmlheader}{?TSFbodyheader}{?TSFasidenav}{?TSFsections}{?TSFbodyfooter}{?TSFhtmlfooter}
+TSFdocs_tags:
+	{?/CODE}	{?CODE}
+{?CODE}
+	<pre><code>
+{?/CODE}
+	</code></pre>
