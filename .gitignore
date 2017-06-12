@@ -75,4 +75,4 @@ target/
 # git checkout 20170612M142102
 # git merge 20170612M142102
 # git branch -d 20170612M142102
-test.*
+test_*

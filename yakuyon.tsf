@@ -2,13 +2,13 @@
 TSF_Tab-Separated-Forth:
 	../../ooblog.github.io/yakuyon.tsf	../TSF2KEV/sample/TSFdoc.tsf	2	#TSF_runagainN	#TSF_fin.
 TSFdocs_files:
-	../../ooblog.github.io/test.html
-	../../ooblog.github.io/test.404.html
-	../../ooblog.github.io/test.やくよん.html
-	../../ooblog.github.io/test.ぶっくま.html
-	../../ooblog.github.io/test.ふぉんと.html
-	../../ooblog.github.io/test.LTsv.html
-	../../ooblog.github.io/test.TSV.html
+	../../ooblog.github.io/test_index.html
+	../../ooblog.github.io/test_404.html
+	../../ooblog.github.io/test_やくよん.html
+	../../ooblog.github.io/test_ぶっくま.html
+	../../ooblog.github.io/test_ふぉんと.html
+	../../ooblog.github.io/test_LTsv.html
+	../../ooblog.github.io/test_TSV.html
 TSFdocs_basedocs:
 	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:
 index_html:
