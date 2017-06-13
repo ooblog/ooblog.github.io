@@ -62,10 +62,10 @@ target/
 .ipynb_checkpoints
 
 
-# git clone github:ooblog/TSF2KEV.git
+# git clone github:ooblog/ooblog.github.io.git
 # git status
-# git push github:ooblog/TSF2KEV.git master
-# git push github:ooblog/TSF2KEV.git 20170612M142102
+# git push github:ooblog/ooblog.github.io.git master
+# git push github:ooblog/ooblog.github.io.git 20170612M142102
 # git log
 # git ls-files
 # git commit -a -m ""
