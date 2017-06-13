@@ -7,5 +7,5 @@
 [https://github.com/ooblog/TSF2KEV/](https://github.com/ooblog/TSF2KEV/ "ooblog/TSF2KEV: プログラミング言語「TSF_Tab-Separated-Forth」開発中。")  
 
 &#35;! -- Copyright (c) 2016-2017 ooblog --  
-&#35;! License: MIT　https://github.com/ooblog/TSF2KEV/blob/master/LICENSE  
+&#35;! License: MIT　https://github.com/ooblog/ooblog.github.io/blob/master/LICENSE  
 
