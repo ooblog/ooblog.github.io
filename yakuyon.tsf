@@ -4,17 +4,32 @@ TSF_Tab-Separated-Forth:
 TSFdocs_files:
 	../../ooblog.github.io/test_index.html
 	../../ooblog.github.io/test_404.html
+	../../ooblog.github.io/test_README.md
 	../../ooblog.github.io/test_やくよん.html
 	../../ooblog.github.io/test_ぶっくま.html
 	../../ooblog.github.io/test_ふぉんと.html
 	../../ooblog.github.io/test_LTsv.html
-	../../ooblog.github.io/test_TSV.html
+	../../ooblog.github.io/test_TSF.html
+	../../ooblog.github.io/test_KEV.html
 TSFdocs_basedocs:
-	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:
+	index_html:	index_html:	readme_md:
+	index_html:	index_html:	index_html:	index_html:	index_html:	index_html:
 index_html:
 	{?TSFhtmlheader}{?TSFbodyheader}{?TSFasidenav}{?TSFsummaries}{?TSFlinks}{?TSFbodyfooter}{?TSFhtmlfooter}
+readme_md:
+	# 「ooblog.github.io」はooblogの「GitHub Pages」です。
+	
+	サイト「約四文字」のページはこちら。  
+	[https://ooblog.github.io/](https://ooblog.github.io/ "「約四文字」(http://ooblog.github.io/)")  
+	
+	サイトジェネレータ「[TSFdoc.tsf](https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf "TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV")」がある「TSF_Tab-Separated-Forth」のページはこちら(LTsv_docからTSFdocに移行作業中)。  
+	[https://github.com/ooblog/TSF2KEV/](https://github.com/ooblog/TSF2KEV/ "ooblog/TSF2KEV: プログラミング言語「TSF_Tab-Separated-Forth」開発中。")  
+	
+	&#35;! -- Copyright (c) 2016-2017 ooblog --  
+	&#35;! License: MIT　https://github.com/ooblog/ooblog.github.io/blob/master/LICENSE  
 TSFdocs_tags:
 	{?TAB}	{?NL}	{?/CODE}	{?CODE}
+	{?ICONlink_KEV}	{?ICONlink_LTsv}	{?ICONlink_TSF}	{?ICONlink_LTsv}
 	{?TSFsummaries_ふぉんと_サンプル文字列}
 	{?breadcrumbs_hashes}	{$breadcrumbs_index}	{?breadcrumbs}	{?TITLE}
 	{?TSFhtmlheader}	{?TSFbodyheader}	{?TSFasidenav}	{?TSFsummaries}	{?TSFlinks}	{?TSFbacktop}	{?TSFbodyfooter}	{?TSFhtmlfooter}
@@ -30,7 +45,7 @@ TSFdocs_tags:
 	 <script src="yakuyon.js"></script>
 	</head><body>
 	 <header><nav>
-	  <div class="yonmoji_root"><a href="https://ooblog.github.io/" rel="publisher" title="https://ooblog.github.io/">約四<br></a><a href="https://ooblog.github.io/" rel="publisher" title="https://ooblog.github.io/">文字</a></div>
+	  <div class="yonmoji_root"><a href="https://ooblog.github.io/" rel="publisher" title="「約四文字」(http://ooblog.github.io/)">約四<br></a><a href="https://ooblog.github.io/" rel="publisher" title="「約四文字」(http://ooblog.github.io/)">文字</a></div>
 	  {?breadcrumbs}
 	  <br class="yonmoji_both">
 	 </nav></header>
@@ -43,15 +58,18 @@ TSFdocs_tags:
 {$breadcrumbs_other}
 	<span> &#62; <mark>{?breadcrumbs_hashes}</mark></span> {$breadcrumbs_index}
 {?breadcrumbs_hashes}
-	index	404	やくよん	ぶっくま	ふぉんと	LTsv	TSV
+	index	404	readme
+	やくよん	ぶっくま	ふぉんと	LTsv	TSF	KEV
 {?TSFsummaries}
 	{$TSFsummaries_index}
 	{$TSFsummaries_404}
+	{$TSFsummaries_readme}
 	{$TSFsummaries_やくよん}
 	{$TSFsummaries_ぶっくま}
 	{$TSFsummaries_ふぉんと}
 	{$TSFsummaries_LTsv}
-	{$TSFsummaries_TSV}
+	{$TSFsummaries_TSF}
+	{$TSFsummaries_KEV}
 {$TSFsummaries_index}
 {$TSFsummaries_404}
 	 <section>
@@ -67,6 +85,7 @@ TSFdocs_tags:
 	   <li>単語が思いつかない、その他不具合などの疑いがある場合、<br>入力欄に「やくよん」「ぶっくま」「ふぉんと」と入力してみて動作確認してみてください。</li>
 	  </ol>
 	 </section>
+{$TSFsummaries_readme}
 {$TSFsummaries_やくよん}
 	 <section>
 	  <div class="yonmoji">
@@ -135,7 +154,7 @@ TSFdocs_tags:
 	  </ol>
 	  <p>
 	   フォント「kan5x5comic」のライセンスも「<a href="https://github.com/ooblog/LTsv10kanedit/kanfont.py" title="ooblog/LTsv10kanedit">kanfont.py</a>」を含む「<a href="https://ooblog.github.io/LTsv10kanedit/"><img src="https://ooblog.github.io/LTsv10kanedit/LTsv10_logo.png" alt="LTsv10kanedit(tsvtool10)" title="LTsv10kanedit(tsvtool10)" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/</a>」にとりあえず準拠。<br>
-	   「kan5x5comic」の開発環境はいずれ「<a href="TSV.html" title="TSV.html">TSV</a>」に置き換える予定。<br>
+	   「kan5x5comic」の開発環境はいずれ「<a href="TSF.html" title="TSF.html">TSF</a>」に置き換える予定。<br>
 	  </p>
 	 </section>
 	 <section>
@@ -172,7 +191,7 @@ TSFdocs_tags:
 {$TSFsummaries_LTsv}
 	 <section>
 	  <div class="yonmoji">
-	   <H2 class="yonmoji_word">ＬＴ<br>ＳＶ</H2>
+	   <H2 class="yonmoji_word">ＬＴ<br>ｓｖ</H2>
 	   <H3>「<dfn>「L:Tsv」(<abbr title="「L:Tsv」">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>「LTSV」の読み書きを中心としたモジュール群です。</H3>
 	   <br class="yonmoji_both">
 	  </div>
@@ -183,19 +202,70 @@ TSFdocs_tags:
 	    フォントエディタ(グリフエディタ)や漢直(漢字直接入力)やドキュメント作成ツールなども付属しています。<br>
 	   </li>
 	   <li>
-	    フォントエディタ(グリフエディタ)や漢直(漢字直接入力)の開発主体は「<a href="TSV.html" title="TSV.html">TSV</a>」に置き換える予定。<br>
+	    フォントエディタ(グリフエディタ)や漢直(漢字直接入力)の開発主体は「<a href="TSF.html" title="TSF.html">TSF</a>」に置き換える予定。<br>
 	    既にドキュメント作成ツールは「<a href="https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf" title="TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV">TSFdoc.tsf</a>」に置き換わってます。<br>
 	   </li>
 	  </ol>
 	  <p>
-	   「L:Tsv」の仕様やモジュール群および「kanedit」などのHTML版ドキュメントは<br>
-	   「<a href="https://ooblog.github.io/LTsv10kanedit/" title="LTsv10kanedit(tsvtool10)モジュール解説(「LTsv/LTsv_doc.tsv」を「LTsv/LTsv_doc.py」で「docs/LTsv.html」に変換)"><img src="https://ooblog.github.io/LTsv10kanedit/LTsv10_logo.png" alt="LTsv10kanedit(tsvtool10)" title="LTsv10kanedit(tsvtool10)" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/</a>」を参考。<br>
+	   「L:Tsv」の仕様やモジュール群などドキュメントは「{?ICONlink_LTsv}」を参考。<br>
 	  </p>
 	 </section>
-{$TSFsummaries_TSV}
+{$TSFsummaries_TSF}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">ＴＳ<br>　Ｆ</H2>
+	   <H3>「<dfn>TSF_Tab-Separated-Forth(<abbr title="TSF_Tab-Separated-Forth">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>Forth風プログラミング言語です。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_shuhar">
+	   <li>
+	    元々TSVというデータフォーマットがあって、TSVにプログラムを搭載(Value→Forth)できるようにしたものがTSFです。<br>
+	    「csv→tsv→ltsv(HSP)→L:Tsv(BaCon,Python)→TSF(D言語,Python)」みたいな流れなので、<br>
+	    間接的にはHSPやPythonの影響を受けてるはずですが、厳密にはプログラミング言語からではなくデータフォーマットからの進化です。<br>
+	   </li>
+	   <li>
+	    Forthと異なる点として、括弧や中置記法を用いた式の使用も可能です。逆に構文の方にはfor文やif文が無いので注意。<br>
+	    コンパイラではなくインタプリタなので直接実行バイナリを作る事はできませんが、D言語やPythonのソースに置き換える事が可能なので、D言語に変換したTSFをコンパイルする事は可能です。<br>
+	    「TSV」の言語仕様やモジュール群などドキュメントは「{?ICONlink_TSF}」を参考(肝心のドキュメントですが執筆途中です)。<br>
+	   </li>
+	   <li>
+	    TSFの当面の目標は「<a href="https://ooblog.github.io/TSF2KEV/KEV2.html" title="「KEV」はVimスクリプトでできてる漢字直接入力です。">KEV2</a>」をVim使わずにテキストエディタを作る事です。<br>
+	    今の所ここのドキュメント生成や「<a href="https://ooblog.github.io/" rel="publisher" title="「約四文字」(http://ooblog.github.io/)">約四文字</a>」のサイトジェネレートなどテキスト編集のみです。<br>
+	   </li>
+	  </ol>
+	  <p>
+	  </p>
+	 </section>
+{$TSFsummaries_KEV}
+	 <section>
+	  <div class="yonmoji">
+	   <H2 class="yonmoji_word">ＫＥ<br>　Ｖ</H2>
+	   <H3>「<dfn>kanedit.vim(<abbr title="kanedit.vim">{?breadcrumbs_hashes}</abbr>)</dfn>」は<br>Vimスクリプトで動く漢字直接入力/単漢字検索です。</H3>
+	   <br class="yonmoji_both">
+	  </div>
+	  <ol class="yonmoji_‎syllogism">
+	   <li>
+	    文章の入力だけでなく編集の事も考えると漢字直接入力(漢直)に加え単漢字検索(カーソル移動)も必要。<br>
+	    つまり単にIME的なものを作るだけではダメで、検索するためのエディタを作る必要。<br>
+	    (OSの深い知識が行方不明なIME作るよりプログラムの知識で作れるエディタの方が難易度低い)<br>
+	   </li>
+	   <li>
+	    「TSF_Tab-Separated-Forth」は開発中なので先に「Vim」のスクリプトでそれっぽいものは一応作った。<br>
+	    「Vim」版は「\(円記号)」「~(チルダ)」関連が単漢字検索(シフトキーで入力と同じ文字を検索)で混乱を招く問題。<br>
+	   </li>
+	   <li>
+	    漢直特有の漢字配列編集やフォントグリフ編集は「Vim」だけでは困難なので、<br>
+	    「TSF_Tab-Separated-Forth」でエディタ(文章のエディタだけでなくフォントのグリフエディタ含む)を作る予定。<br>
+	   </li>
+	  </ol>
+	  <p>
+	   「KEV」の使い方は「{?ICONlink_KEV}」も参考。<br>
+	  </p>
+	 </section>
 {?TSFlinks}
 	{$TSFlinks_index}
 	{$TSFlinks_404}
+	{$TSFlinks_readme}
 	{$TSFlinks_404}
 	{$TSFlinks_404}
 	{$TSFlinks_404}
@@ -213,11 +283,14 @@ TSFdocs_tags:
 	   <dt><a href="ふぉんと.html" title="ふぉんと.html">ふぉんと</a></dt>
 	   <dd>「フォントkan5x5comic(ふぉんと)」は「kanfont(LTsv10kanedit)」で作成できるフォントです。</dd>
 	   <dt><a href="LTsv.html" title="LTsv.html">LTsv</a></dt>
-	   <dd>「L:Tsv(LTsv)」はTSVの前身となるデータフォーマット「L:Tsv」と関連Pythonモジュールです。<br></dd>
-	   <dt><a href="TSV.html" title="TSV.html">TSV</a></dt>
-	   <dd>「TSV(TSV)」はプログラミング言語「TSF_Tab-Separated-Forth」です(D言語とPyhtonで実装)。<br>このサイト「約四文字」もTSV付属の「<a href="https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf" title="TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV">TSFdoc.tsf</a>」で更新。<br></dd>
+	   <dd>「L:Tsv(LTsv)」はTSFの前身となるデータフォーマット「L:Tsv」と関連Pythonモジュールです。<br></dd>
+	   <dt><a href="TSF.html" title="TSF.html" title="TSF.html">TSF</a></dt>
+	   <dd>「TSF(TSF)」はプログラミング言語「TSF_Tab-Separated-Forth」です(D言語とPyhtonで実装)。<br>このサイト「約四文字」もTSF付属の「<a href="https://github.com/ooblog/TSF2KEV/blob/master/sample/TSFdoc.tsf" title="TSF2KEV/TSFdoc.tsf at master · ooblog/TSF2KEV">TSFdoc.tsf</a>」で更新。<br></dd>
+	   <dt><a href="TSF.html" title="KEV.html" title="KEV.html">KEV</a></dt>
+	   <dd>「kanedit.vim(KEV)」はVimスクリプトで動く漢字直接入力/単漢字検索です。<br></dd>
 	  </dl>
 	 </nav></aside>
+{$TSFlinks_readme}
 {?TSFbodyfooter}
 	{$TSFbodyfooter}
 {$TSFbodyfooter}
@@ -248,6 +321,12 @@ TSFdocs_tags:
 	</body></html>
 {?TSFbacktop}
 		<div class="gotop"><a href="#top">↑Top</a></div>
+{?ICONlink_TSF}
+	<a href="https://ooblog.github.io/TSF2KEV/" title="プログラミング言語「TSF_Tab-Separated-Forth」開発中。 "><img src="https://ooblog.github.io/TSF2KEV/TSF2KEV_icon.png" alt="TSF2KEV" title="TSF2KEV" width="48" height="48">https://ooblog.github.io/TSF2KEV/</a>
+{?ICONlink_KEV}
+	<a href="https://ooblog.github.io/TSF2KEV/KEV2.html" title="「KEV」はVimスクリプトでできてる漢字直接入力です。"><img src="https://ooblog.github.io/TSF2KEV/KEV2_icon.png" alt="KEV2" title="KEV2" width="48" height="48">https://ooblog.github.io/TSF2KEV/KEV2.html</a>
+{?ICONlink_LTsv}
+	<a href="https://ooblog.github.io/LTsv10kanedit/" title="「LTsv10kanedit(tsvtool10)」は「L:Tsv」の読み書きを中心としたモジュール群です。"><img src="https://ooblog.github.io/LTsv10kanedit/LTsv10_logo.png" alt="LTsv10kanedit(tsvtool10)" title="LTsv10kanedit(tsvtool10)" width="48" height="48">https://ooblog.github.io/LTsv10kanedit/</a>
 {?TITLE}
 	「約四文字」(http://ooblog.github.io/)	{?breadcrumbs_hashes} 「約四文字」(http://ooblog.github.io/)
 {?CODE}
