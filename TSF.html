@@ -1,6 +1,6 @@
 <html lang="ja"><head>
  <meta charset="UTF-8">
- <title>ぶっくま 「約四文字」(http://ooblog.github.io/)</title>
+ <title>TSF 「約四文字」(http://ooblog.github.io/)</title>
  <link rel="stylesheet" type="text/css" href="yakuyon.css">
  <link rel="icon" type="image/png" href="favicon.png">
  <link rel="search" type="application/opensearchdescription+xml" href="https://ooblog.github.io/opensearch.xml" title="「約四文字」">
@@ -8,26 +8,31 @@
 </head><body>
  <header><nav>
   <div class="yonmoji_root"><a href="https://ooblog.github.io/" rel="publisher" title="「約四文字」(http://ooblog.github.io/)">約四<br></a><a href="https://ooblog.github.io/" rel="publisher" title="「約四文字」(http://ooblog.github.io/)">文字</a></div>
-  <span> &#62; <mark>ぶっくま</mark></span> <span class="yonmoji_sitemap"><a href="404.html" title="https://ooblog.github.io/404.html">sitemap(404)</a></span>
+  <span> &#62; <mark>TSF</mark></span> <span class="yonmoji_sitemap"><a href="404.html" title="https://ooblog.github.io/404.html">sitemap(404)</a></span>
   <br class="yonmoji_both">
  </nav></header> <section>
   <div class="yonmoji">
-   <H2 class="yonmoji_word">ぶっ<br>くま</H2>
-   <H3>「<dfn>ブックマークレット(<abbr title="ブックマークレット">ぶっくま</abbr>)</dfn>」は<br>ブラウザのブックマークで動作する検索ダイアログです。</H3>
+   <H2 class="yonmoji_word">ＴＳ<br>　Ｆ</H2>
+   <H3>「<dfn>TSF_Tab-Separated-Forth(<abbr title="TSF_Tab-Separated-Forth">TSF</abbr>)</dfn>」は<br>Forth風プログラミング言語です。</H3>
    <br class="yonmoji_both">
   </div>
-  <ol class="yonmoji_kiketsushouten">
-   <li>ブラウザの「ブックマーク」にJavaScriptを登録して使用できる検索ダイアログです。</li>
-   <li>テキストを選択した状態で検索ダイアログを開くと選択テキストが最初から代入されます。<br>ダイアログ内で入力変更も可能です。</li>
-   <li>OKボタンで、ダイアログに入力したページ名でページが表示されるはずです。</li>
+  <ol class="yonmoji_shuhar">
    <li>
-    実は「<a href="javascript:(function(){%20var%20d=document;var%20s=d.selection?d.selection.createRange().text:d.getSelection();%20var%20t=prompt('page%EF%BC%9A['+s+']%E7%B4%84%E5%9B%9B%E6%96%87%E5%AD%97',s);%20if(t.length>0){var%20regExp=new%20RegExp('[/|\\|:|*|?|<|>|\|]','g');t=t.replace(regExp,'');window.open('<?sitename?>'+t+'.html');}%20})();" title="「約四文字」検索ダイアログ(ブックマークレット)">「約四文字」検索ダイアログ(ブックマークレット)</a>」をブックマークに登録するよりも、<br>
-    ブラウザ右上の検索バーから「<a href="https://ooblog.github.io/opensearch.xml" title="<?sitename?>opensearch.xml">opensearch.xml</a>」を登録するといわゆる「検索プロバイダー」っぽく、<br>
-    「https://ooblog.github.io/?page=ぶっくま」クエリーを擬似的に発行させてより検索っぽい挙動に寄せる事も可能です。<br>
+    元々TSVというデータフォーマットがあって、TSVにプログラムを搭載(Value→Forth)できるようにしたものがTSFです。<br>
+    「csv→tsv→ltsv(HSP)→L:Tsv(BaCon,Python)→TSF(D言語,Python)」みたいな流れなので、<br>
+    間接的にはHSPやPythonの影響を受けてるはずですが、厳密にはプログラミング言語からではなくデータフォーマットからの進化です。<br>
    </li>
-   </ol>
+   <li>
+    Forthと異なる点として、括弧や中置記法を用いた式の使用も可能です。逆に構文の方にはfor文やif文が無いので注意。<br>
+    コンパイラではなくインタプリタなので直接実行バイナリを作る事はできませんが、D言語やPythonのソースに置き換える事が可能なので、D言語に変換したTSFをコンパイルする事は可能です。<br>
+    「TSV」の言語仕様やモジュール群などドキュメントは「<a href="https://ooblog.github.io/TSF2KEV/" title="プログラミング言語「TSF_Tab-Separated-Forth」開発中。 "><img src="https://ooblog.github.io/TSF2KEV/TSF2KEV_icon.png" alt="TSF2KEV" title="TSF2KEV" width="48" height="48">https://ooblog.github.io/TSF2KEV/</a>」を参考(肝心のドキュメントですが執筆途中です)。<br>
+   </li>
+   <li>
+    TSFの当面の目標は「<a href="https://ooblog.github.io/TSF2KEV/KEV2.html" title="「KEV」はVimスクリプトでできてる漢字直接入力です。">KEV2</a>」をVim使わずにテキストエディタを作る事です。<br>
+    今の所ここのドキュメント生成や「<a href="https://ooblog.github.io/" rel="publisher" title="「約四文字」(http://ooblog.github.io/)">約四文字</a>」のサイトジェネレートなどテキスト編集のみです。<br>
+   </li>
+  </ol>
   <p>
-   「/?page=ぶっくま」といったクエリーは「<a href="https://pages.github.com/" title="GitHub Pages - Websites for you and your projects.">GitHub Pages</a>」で動きません。JavaScriptでそれっぽく見せてるだけなので注意。<br>
   </p>
  </section> <aside><nav>
   <H2>関連リンク</H2>
