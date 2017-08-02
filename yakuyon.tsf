@@ -1,6 +1,6 @@
 #! /usr/bin/env TSF
 TSF_Tab-Separated-Forth:
-	../../ooblog.github.io/yakuyon.tsf	../TSF2KEV/sample/TSFdoc.tsf	2	#TSF_runagainN	#TSF_fin.
+	../../ooblog.github.io/yakuyon.tsf	../TSF2KEV/sample/TSFdoc.tsf	2	#!TSF_runagainN	#!TSF_fin.
 TSFdocs_files:
 	../../ooblog.github.io/index.html
 	../../ooblog.github.io/404.html
@@ -295,7 +295,7 @@ TSFdocs_tags:
 	{$TSFbodyfooter}
 {$TSFbodyfooter}
 	 <article><div>
-	  <H1>詮索しない検索エンジン「約四文字」。</H1>
+	  <H1 class="yakuyon">詮索しない検索エンジン「約四文字」。</H1>
 	  <div class="yonmoji">
 	   <p class="yonmoji_logo">約四<br>文字</p>
 	   <form id="entry" action="" method="get" onsubmit="newword(); return false;">
